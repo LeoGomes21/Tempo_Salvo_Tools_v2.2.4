@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AdicionarCoordExcelDialog</class>
+ <widget class="QDialog" name="AdicionarCoordExcelDialog">
+  <property name="windowModality">
+   <enum>Qt::WindowModality::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>402</width>
+    <height>710</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>402</width>
+    <height>710</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>404</width>
+    <height>710</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../icones/xlsods.png</normaloff>../icones/xlsods.png</iconset>
+  </property>
+  <property name="sizeGripEnabled">
+   <bool>true</bool>
+  </property>
+  <property name="modal">
+   <bool>false</bool>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_10">
+   <item row="0" column="0" colspan="2">
+    <layout class="QGridLayout" name="gridLayout_9">
+     <item row="0" column="0">
+      <widget class="QFrame" name="frame_3">
+       <property name="minimumSize">
+        <size>
+         <width>381</width>
+         <height>42</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>500</width>
+         <height>42</height>
+        </size>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Shape::Box</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Shadow::Raised</enum>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="1">
+         <widget class="QComboBox" name="comboBox_Pasta">
+          <property name="maximumSize">
+           <size>
+            <width>225</width>
+            <height>20</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label">
+          <property name="maximumSize">
+           <size>
+            <width>125</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Lista de Pastas Abertas:</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QFrame" name="frame">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>500</width>
+         <height>500</height>
+        </size>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Shape::Box</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Shadow::Raised</enum>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_4">
+        <item row="0" column="0">
+         <widget class="QTableView" name="tableViewDados">
+          <property name="minimumSize">
+           <size>
+            <width>360</width>
+            <height>200</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>500</width>
+            <height>500</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QFrame" name="frame_5">
+       <property name="minimumSize">
+        <size>
+         <width>381</width>
+         <height>61</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>500</width>
+         <height>61</height>
+        </size>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Shape::Box</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Shadow::Raised</enum>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_6">
+        <item row="0" column="0">
+         <widget class="QTextEdit" name="textEdit_Erros">
+          <property name="minimumSize">
+           <size>
+            <width>360</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>360</width>
+            <height>40</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QFrame" name="frame_8">
+       <property name="minimumSize">
+        <size>
+         <width>384</width>
+         <height>78</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>500</width>
+         <height>78</height>
+        </size>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Shape::Box</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Shadow::Raised</enum>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_8">
+        <item row="0" column="0">
+         <layout class="QGridLayout" name="gridLayout_5">
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_7">
+            <property name="maximumSize">
+             <size>
+              <width>50</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Campo X:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QComboBox" name="comboBoxX">
+            <property name="maximumSize">
+             <size>
+              <width>120</width>
+              <height>16777215</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="0" column="1">
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_15">
+            <property name="maximumSize">
+             <size>
+              <width>50</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Campo Z:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QComboBox" name="comboBoxZ">
+            <property name="maximumSize">
+             <size>
+              <width>120</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="1" column="0">
+         <layout class="QGridLayout" name="gridLayout_7">
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_12">
+            <property name="maximumSize">
+             <size>
+              <width>50</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Campo Y:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QComboBox" name="comboBoxY">
+            <property name="maximumSize">
+             <size>
+              <width>120</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="1" column="1">
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Orientation::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>19</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QFrame" name="frame_2">
+       <property name="maximumSize">
+        <size>
+         <width>500</width>
+         <height>48</height>
+        </size>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Shape::Box</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Shadow::Raised</enum>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="0" column="0">
+         <widget class="QLineEdit" name="lineEdit_SRC"/>
+        </item>
+        <item row="0" column="1">
+         <widget class="QPushButton" name="pushButtonSRC">
+          <property name="maximumSize">
+           <size>
+            <width>70</width>
+            <height>23</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    /* Mantém o estilo original do botão */
+    transition: all 0.2s ease; /* Suaviza todas as transições de estado */
+}
+
+QPushButton:hover {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #ffffcc, stop:1 #ffff99); /* Gradiente suave em tons de amarelo claro */
+    border: 1px solid #cccc00; /* Borda amarela mais escura */
+    border-radius: 4px; /* Cantos arredondados */
+    box-shadow: 0px 4px 8px rgba(255, 255, 0, 0.8); /* Sombra amarela brilhante e levemente deslocada para dar profundidade */
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #ffff99, stop:1 #cccc00); /* Gradiente mais escuro para efeito pressionado */
+    border: 1px solid #999900; /* Borda amarela ainda mais escura */
+    box-shadow: inset 0px 4px 8px rgba(255, 255, 0, 0.8); /* Sombra interna para dar a impressão de que o botão foi pressionado */
+    transform: scale(0.98); /* Leve redução no tamanho para simular o pressionar */
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Projeção</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="0">
+    <widget class="QPushButton" name="pushButtonAdicionar">
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    /* Mantém o estilo original do botão */
+    transition: all 0.2s ease; /* Suaviza todas as transições de estado */
+}
+
+QPushButton:hover {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #80dfff, stop:1 #66c2ff); /* Gradiente suave em tons de azul malibu */
+    border: 1px solid #3399ff; /* Borda azul malibu mais escura */
+    border-radius: 4px; /* Cantos arredondados */
+    box-shadow: 0px 4px 8px rgba(102, 194, 255, 0.8); /* Sombra azul malibu brilhante e levemente deslocada para dar profundidade */
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #66c2ff, stop:1 #3399ff); /* Gradiente mais escuro para efeito pressionado */
+    border: 1px solid #007acc; /* Borda azul malibu ainda mais escura */
+    box-shadow: inset 0px 4px 8px rgba(102, 194, 255, 0.8); /* Sombra interna para dar a impressão de que o botão foi pressionado */
+    transform: scale(0.98); /* Leve redução no tamanho para simular o pressionar */
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Adicionar Camada</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QPushButton" name="pushButtonFecha">
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    /* Mantém o estilo original do botão */
+    transition: all 0.2s ease; /* Suaviza todas as transições de estado */
+}
+
+QPushButton:hover {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #ffcccc, stop:1 #ff9999); /* Gradiente suave em tons de vermelho claro */
+    border: 1px solid #ff6666; /* Borda vermelha mais escura */
+    border-radius: 4px; /* Cantos arredondados */
+    box-shadow: 0px 4px 8px rgba(255, 0, 0, 0.8); /* Sombra vermelha brilhante e levemente deslocada para dar profundidade */
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #ff9999, stop:1 #ff6666); /* Gradiente mais escuro para efeito pressionado */
+    border: 1px solid #cc0000; /* Borda vermelha ainda mais escura */
+    box-shadow: inset 0px 4px 8px rgba(255, 0, 0, 0.8); /* Sombra interna para dar a impressão de que o botão foi pressionado */
+    transform: scale(0.98); /* Leve redução no tamanho para simular o pressionar */
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Fechar</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

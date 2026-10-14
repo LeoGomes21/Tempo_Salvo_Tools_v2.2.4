@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ConverterMalhasDialog</class>
+ <widget class="QDialog" name="ConverterMalhasDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>263</width>
+    <height>190</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>263</width>
+    <height>190</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>263</width>
+    <height>190</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../icones/convertemalha.png</normaloff>../icones/convertemalha.png</iconset>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_3">
+   <item row="0" column="0">
+    <widget class="QFrame" name="frame">
+     <property name="frameShape">
+      <enum>QFrame::Shape::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Shadow::Raised</enum>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0" colspan="2">
+       <widget class="QCheckBox" name="checkBoxPontos">
+        <property name="styleSheet">
+         <string notr="true">QCheckBox::indicator {
+    width: 11px;  /* Aumentei um pouco o tamanho para melhor visualização */
+    height: 11px;
+    border-radius: 2px; /* Cantos ligeiramente arredondados */
+    background-color: #ffffff; /* Cor de fundo padrão */
+    border: 1px solid #8a8a8a; /* Borda padrão */
+    transition: all 0.2s ease; /* Suaviza as transições */
+}
+
+QCheckBox::indicator:hover {
+    background-color: #7eafff; /* Azul suave ao passar o mouse */
+    border: 1px solid #8a8a8a; /* Borda padrão ao passar o mouse */
+    border-radius: 2px; /* Mantém os cantos arredondados */
+}
+
+QCheckBox::indicator:checked {
+    width: 11px;  /* Aumenta um pouco o tamanho para melhor visualização */
+    height: 11px;
+    background-color: #0000ff; /* Azul mais forte ao ser clicado */
+    border: 1px solid #00007f; /* Borda Azul escura ao ser clicado */
+    border-radius: 3px; /* Mantém os cantos arredondados */
+    box-shadow: inset 0px 4px 8px rgba(255, 0, 0, 0.5); /* Sombra interna para efeito 3D */
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Manter a Camada de Pontos no Projeto</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" colspan="2">
+       <widget class="QCheckBox" name="checkBoxGRADE">
+        <property name="styleSheet">
+         <string notr="true">QCheckBox::indicator {
+    width: 11px;  /* Aumentei um pouco o tamanho para melhor visualização */
+    height: 11px;
+    border-radius: 2px; /* Cantos ligeiramente arredondados */
+    background-color: #ffffff; /* Cor de fundo padrão */
+    border: 1px solid #8a8a8a; /* Borda padrão */
+    transition: all 0.2s ease; /* Suaviza as transições */
+}
+
+QCheckBox::indicator:hover {
+    background-color: #7eafff; /* Azul suave ao passar o mouse */
+    border: 1px solid #8a8a8a; /* Borda padrão ao passar o mouse */
+    border-radius: 2px; /* Mantém os cantos arredondados */
+}
+
+QCheckBox::indicator:checked {
+    width: 11px;  /* Aumenta um pouco o tamanho para melhor visualização */
+    height: 11px;
+    background-color: #0000ff; /* Azul mais forte ao ser clicado */
+    border: 1px solid #00007f; /* Borda Azul escura ao ser clicado */
+    border-radius: 3px; /* Mantém os cantos arredondados */
+    box-shadow: inset 0px 4px 8px rgba(255, 0, 0, 0.5); /* Sombra interna para efeito 3D */
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Adicionar Camada Primitiva ao Projeto</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QFrame" name="frame_2">
+     <property name="frameShape">
+      <enum>QFrame::Shape::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Shadow::Raised</enum>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="0">
+       <widget class="QPushButton" name="pushButton_converte">
+        <property name="styleSheet">
+         <string notr="true">/* Estado normal: mantém o estilo original definido pelo Qtdesigner */
+QPushButton {
+    /* Não há alterações aqui, preserva o visual padrão */
+}
+
+/* Ao passar o mouse: aplica o efeito &quot;Windows Vista&quot; com magenta neon,
+   onde a parte inferior fica mais clara e iluminada */
+QPushButton:hover {
+    background: qlineargradient(
+        spread: pad,
+        x1: 0, y1: 0,
+        x2: 0, y2: 1,
+        stop: 0   #ff66ff,  /* Topo levemente mais claro */
+        stop: 0.8 #ff00ff,  /* Cor principal: magenta neon */
+        stop: 1   #ff99ff   /* Fundo mais claro e iluminado */
+    );
+    border: 1px solid #ff00ff; /* Realça a borda em magenta neon */
+    border-radius: 4px;         /* Garante cantos arredondados, se necessário */
+    transition: all 0.2s ease;  /* Suaviza a transição do efeito */
+}
+
+/* Ao clicar: fixa o efeito com cor sólida e aparência &quot;pressionada&quot; */
+QPushButton:pressed {
+    background: qlineargradient(
+        spread: pad,
+        x1: 0, y1: 0,
+        x2: 0, y2: 1,
+        stop: 0   #ff00ff,  /* Gradiente para efeito pressionado */
+        stop: 1   #e600e6
+    );
+    border: 1px solid #b300b3;  /* Borda levemente escurecida */
+    transform: scale(0.98);      /* Sutil redução de escala para simular clique */
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Converte de DXF</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QPushButton" name="pushButton_converteDAE">
+        <property name="styleSheet">
+         <string notr="true">/* Estado normal: mantém o estilo original definido pelo Qtdesigner */
+QPushButton {
+    /* Não há alterações aqui, preserva o visual padrão */
+}
+
+/* Ao passar o mouse: aplica o efeito &quot;Windows Vista&quot; com azul neon */
+QPushButton:hover {
+    background: qlineargradient(
+        spread: pad,
+        x1: 0, y1: 0,
+        x2: 0, y2: 1,
+        stop: 0   #00f7ff,  /* Topo levemente mais claro */
+        stop: 0.8 #80f0ff,
+        stop: 1   #60e0f0   /* Fundo com variação suave */
+    );
+    border: 1px solid #00d9ff; /* Realça a borda em azul neon */
+    border-radius: 4px;         /* Garante cantos arredondados, se necessário */
+    transition: all 0.2s ease;  /* Suaviza a transição do efeito */
+}
+
+/* Ao clicar: fixa o efeito com cor sólida e aparência &quot;pressionada&quot; */
+QPushButton:pressed {
+    background: qlineargradient(
+        spread: pad,
+        x1: 0, y1: 0,
+        x2: 0, y2: 1,
+        stop: 0   #00d9ff,  /* Gradiente para efeito pressionado */
+        stop: 1   #00daf7
+    );
+    border: 1px solid #0099b3;  /* Borda levemente escurecida */
+    transform: scale(0.98);      /* Sutil redução de escala para simular clique */
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Converte de DAE</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QPushButton" name="pushButton_converteSTL">
+        <property name="styleSheet">
+         <string notr="true">/* Estado normal: mantém o estilo original definido pelo Qtdesigner */
+QPushButton {
+    /* Não há alterações aqui, preserva o visual padrão */
+}
+
+/* Ao passar o mouse: aplica o efeito &quot;Windows Vista&quot; com azul padrão,
+   onde a parte inferior apresenta um tom mais claro e iluminado */
+QPushButton:hover {
+    background: qlineargradient(
+        spread: pad,
+        x1: 0, y1: 0,
+        x2: 0, y2: 1,
+        stop: 0   #87CEFA,   /* Topo: LightSkyBlue, leve e claro */
+        stop: 0.8 #1E90FF,   /* Meio: DodgerBlue, cor padrão e vibrante */
+        stop: 1   #ADD8E6    /* Fundo: LightBlue, mais claro e iluminado */
+    );
+    border: 1px solid #1E90FF; /* Realça a borda com DodgerBlue */
+    border-radius: 4px;        /* Garante cantos arredondados, se necessário */
+    transition: all 0.2s ease; /* Suaviza a transição do efeito */
+}
+
+/* Ao clicar: fixa o efeito com cor sólida e aparência &quot;pressionada&quot; */
+QPushButton:pressed {
+    background: qlineargradient(
+        spread: pad,
+        x1: 0, y1: 0,
+        x2: 0, y2: 1,
+        stop: 0   #1E90FF,   /* Inicia com DodgerBlue */
+        stop: 1   #1874CD    /* Finaliza com um tom mais escuro */
+    );
+    border: 1px solid #1560BD; /* Borda levemente escurecida */
+    transform: scale(0.98);     /* Sutil redução de escala para simular clique */
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Converte de STL</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QPushButton" name="pushButton_converteOBJ">
+        <property name="styleSheet">
+         <string notr="true">/* Estado normal: mantém o estilo original definido pelo Qtdesigner */
+QPushButton {
+    /* Estilo original mantido */
+}
+
+/* Ao passar o mouse: aplica o efeito &quot;Windows Vista&quot; com verde, 
+   onde a parte inferior apresenta um tom mais claro e iluminado */
+QPushButton:hover {
+    background: qlineargradient(
+        spread: pad,
+        x1: 0, y1: 0,
+        x2: 0, y2: 1,
+        stop: 0   #32cd32,   /* Parte superior: cor principal */
+        stop: 0.8 #66ff66,   /* Parte intermediária */
+        stop: 1   #99ff99    /* Parte inferior: tom mais claro e iluminado */
+    );
+    border: 1px solid #66ff66; /* Realça a borda em tom de verde intermediário */
+    border-radius: 4px;         /* Garante cantos arredondados, se necessário */
+    transition: all 0.2s ease;  /* Suaviza a transição do efeito */
+}
+
+/* Ao clicar: fixa o efeito com um gradiente que confere aparência &quot;pressionada&quot; */
+QPushButton:pressed {
+    background: qlineargradient(
+        spread: pad,
+        x1: 0, y1: 0,
+        x2: 0, y2: 1,
+        stop: 0   #32cd32,   /* Inicia com o verde principal */
+        stop: 1   #2e8b57    /* Finaliza com um tom um pouco mais escuro */
+    );
+    border: 1px solid #228B22;  /* Borda levemente escurecida */
+    transform: scale(0.98);      /* Sutil redução de escala para simular clique */
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Converte de OBJ</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QPushButton" name="pushButtonFechar">
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    /* Mantém o estilo original do botão */
+    transition: all 0.2s ease; /* Suaviza todas as transições de estado */
+}
+
+QPushButton:hover {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #ffcccc, stop:1 #ff9999); /* Gradiente suave em tons de vermelho claro */
+    border: 1px solid #ff6666; /* Borda vermelha mais escura */
+    border-radius: 4px; /* Cantos arredondados */
+    box-shadow: 0px 4px 8px rgba(255, 0, 0, 0.8); /* Sombra vermelha brilhante e levemente deslocada para dar profundidade */
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #ff9999, stop:1 #ff6666); /* Gradiente mais escuro para efeito pressionado */
+    border: 1px solid #cc0000; /* Borda vermelha ainda mais escura */
+    box-shadow: inset 0px 4px 8px rgba(255, 0, 0, 0.8); /* Sombra interna para dar a impressão de que o botão foi pressionado */
+    transform: scale(0.98); /* Leve redução no tamanho para simular o pressionar */
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Fechar</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

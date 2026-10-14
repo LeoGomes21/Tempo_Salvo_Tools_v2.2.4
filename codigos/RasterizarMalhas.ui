@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RasterizarMalhaDialog</class>
+ <widget class="QDialog" name="RasterizarMalhaDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>315</width>
+    <height>392</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>315</width>
+    <height>392</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>315</width>
+    <height>444</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../icones/rasterizar.png</normaloff>../icones/rasterizar.png</iconset>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_5">
+   <item row="0" column="0">
+    <widget class="QFrame" name="frame_4">
+     <property name="frameShape">
+      <enum>QFrame::Shape::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Shadow::Sunken</enum>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_4">
+      <item row="0" column="0" colspan="2">
+       <widget class="QFrame" name="frame">
+        <property name="frameShape">
+         <enum>QFrame::Shape::Box</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Shadow::Raised</enum>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_2">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label">
+           <property name="text">
+            <string>Camada de Malhas:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QComboBox" name="comboBoxCamada">
+           <property name="minimumSize">
+            <size>
+             <width>110</width>
+             <height>0</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="1" column="0" colspan="2">
+       <widget class="QGraphicsView" name="graphicsViewMalhas"/>
+      </item>
+      <item row="2" column="0" colspan="2">
+       <widget class="QFrame" name="frame_2">
+        <property name="frameShape">
+         <enum>QFrame::Shape::Box</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Shadow::Raised</enum>
+        </property>
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_2">
+           <property name="minimumSize">
+            <size>
+             <width>80</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Tamanho do Pixel:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QDoubleSpinBox" name="doubleSpinBoxPixel">
+           <property name="suffix">
+            <string> m</string>
+           </property>
+           <property name="decimals">
+            <number>3</number>
+           </property>
+           <property name="maximum">
+            <double>30.000000000000000</double>
+           </property>
+           <property name="singleStep">
+            <double>0.500000000000000</double>
+           </property>
+           <property name="value">
+            <double>0.500000000000000</double>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="3" column="0" colspan="2">
+       <widget class="QFrame" name="frame_3">
+        <property name="frameShape">
+         <enum>QFrame::Shape::Box</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Shadow::Raised</enum>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_3">
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="lineEditSalvar">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>20</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QPushButton" name="pushButtonSalvar">
+           <property name="minimumSize">
+            <size>
+             <width>50</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>50</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">/* Estado normal: mantém o estilo original definido pelo Qtdesigner */
+QPushButton {
+    /* Não há alterações aqui, preserva o visual padrão */
+}
+
+/* Ao passar o mouse: aplica o efeito &quot;Windows Vista&quot; com azul padrão,
+   onde a parte inferior apresenta um tom mais claro e iluminado */
+QPushButton:hover {
+    background: qlineargradient(
+        spread: pad,
+        x1: 0, y1: 0,
+        x2: 0, y2: 1,
+        stop: 0   #87CEFA,   /* Topo: LightSkyBlue, leve e claro */
+        stop: 0.8 #1E90FF,   /* Meio: DodgerBlue, cor padrão e vibrante */
+        stop: 1   #ADD8E6    /* Fundo: LightBlue, mais claro e iluminado */
+    );
+    border: 1px solid #1E90FF; /* Realça a borda com DodgerBlue */
+    border-radius: 4px;        /* Garante cantos arredondados, se necessário */
+    transition: all 0.2s ease; /* Suaviza a transição do efeito */
+}
+
+/* Ao clicar: fixa o efeito com cor sólida e aparência &quot;pressionada&quot; */
+QPushButton:pressed {
+    background: qlineargradient(
+        spread: pad,
+        x1: 0, y1: 0,
+        x2: 0, y2: 1,
+        stop: 0   #1E90FF,   /* Inicia com DodgerBlue */
+        stop: 1   #1874CD    /* Finaliza com um tom mais escuro */
+    );
+    border: 1px solid #1560BD; /* Borda levemente escurecida */
+    transform: scale(0.98);     /* Sutil redução de escala para simular clique */
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Salvar</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QPushButton" name="pushButtonExecutar">
+        <property name="styleSheet">
+         <string notr="true">/* Estado normal: mantém o estilo original definido pelo Qtdesigner */
+QPushButton {
+    /* Não há alterações aqui, preserva o visual padrão */
+}
+
+/* Ao passar o mouse: aplica o efeito &quot;Windows Vista&quot; com azul padrão,
+   onde a parte inferior apresenta um tom mais claro e iluminado */
+QPushButton:hover {
+    background: qlineargradient(
+        spread: pad,
+        x1: 0, y1: 0,
+        x2: 0, y2: 1,
+        stop: 0   #87CEFA,   /* Topo: LightSkyBlue, leve e claro */
+        stop: 0.8 #1E90FF,   /* Meio: DodgerBlue, cor padrão e vibrante */
+        stop: 1   #ADD8E6    /* Fundo: LightBlue, mais claro e iluminado */
+    );
+    border: 1px solid #1E90FF; /* Realça a borda com DodgerBlue */
+    border-radius: 4px;        /* Garante cantos arredondados, se necessário */
+    transition: all 0.2s ease; /* Suaviza a transição do efeito */
+}
+
+/* Ao clicar: fixa o efeito com cor sólida e aparência &quot;pressionada&quot; */
+QPushButton:pressed {
+    background: qlineargradient(
+        spread: pad,
+        x1: 0, y1: 0,
+        x2: 0, y2: 1,
+        stop: 0   #1E90FF,   /* Inicia com DodgerBlue */
+        stop: 1   #1874CD    /* Finaliza com um tom mais escuro */
+    );
+    border: 1px solid #1560BD; /* Borda levemente escurecida */
+    transform: scale(0.98);     /* Sutil redução de escala para simular clique */
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Executar</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QPushButton" name="pushButtonFechar">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    /* Mantém o estilo original do botão */
+    transition: all 0.2s ease; /* Suaviza todas as transições de estado */
+}
+
+QPushButton:hover {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #ffcccc, stop:1 #ff9999); /* Gradiente suave em tons de vermelho claro */
+    border: 1px solid #ff6666; /* Borda vermelha mais escura */
+    border-radius: 4px; /* Cantos arredondados */
+    box-shadow: 0px 4px 8px rgba(255, 0, 0, 0.8); /* Sombra vermelha brilhante e levemente deslocada para dar profundidade */
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #ff9999, stop:1 #ff6666); /* Gradiente mais escuro para efeito pressionado */
+    border: 1px solid #cc0000; /* Borda vermelha ainda mais escura */
+    box-shadow: inset 0px 4px 8px rgba(255, 0, 0, 0.8); /* Sombra interna para dar a impressão de que o botão foi pressionado */
+    transform: scale(0.98); /* Leve redução no tamanho para simular o pressionar */
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Fechar</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

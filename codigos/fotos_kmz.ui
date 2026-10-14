@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>fotos_kmzDialog</class>
+ <widget class="QDialog" name="fotos_kmzDialog">
+  <property name="windowModality">
+   <enum>Qt::WindowModality::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>503</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>400</width>
+    <height>503</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>400</width>
+    <height>503</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../icones/fotos.png</normaloff>../icones/fotos.png</iconset>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_16">
+   <item row="0" column="0">
+    <layout class="QGridLayout" name="gridLayout_15">
+     <item row="0" column="0">
+      <layout class="QGridLayout" name="gridLayout_14">
+       <item row="0" column="0">
+        <widget class="QFrame" name="frame_2">
+         <property name="frameShape">
+          <enum>QFrame::Shape::Box</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Shadow::Raised</enum>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_3">
+          <item row="0" column="0">
+           <widget class="QLabel" name="label">
+            <property name="maximumSize">
+             <size>
+              <width>40</width>
+              <height>16</height>
+             </size>
+            </property>
+            <property name="text">
+             <string> AUTOR:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="lineEdit_Autor">
+            <property name="maximumSize">
+             <size>
+              <width>160</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <widget class="QLabel" name="label_2">
+            <property name="text">
+             <string>RESOLUÇÃO:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="3">
+           <widget class="QLineEdit" name="lineEditExibir"/>
+          </item>
+          <item row="0" column="4">
+           <widget class="QLabel" name="label_11">
+            <property name="text">
+             <string>x</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="5">
+           <widget class="QLineEdit" name="lineEditExibir2"/>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QFrame" name="frame">
+         <property name="frameShape">
+          <enum>QFrame::Shape::Box</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Shadow::Raised</enum>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_12">
+          <item row="0" column="0">
+           <layout class="QGridLayout" name="gridLayout_11">
+            <item row="0" column="0">
+             <layout class="QGridLayout" name="gridLayout_10">
+              <item row="0" column="0">
+               <widget class="QTableView" name="tableViewFotos">
+                <property name="maximumSize">
+                 <size>
+                  <width>170</width>
+                  <height>360</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <layout class="QGridLayout" name="gridLayout_9">
+                <item row="0" column="0">
+                 <widget class="QFrame" name="frame_5">
+                  <property name="frameShape">
+                   <enum>QFrame::Shape::Box</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Shadow::Raised</enum>
+                  </property>
+                  <layout class="QGridLayout" name="gridLayout_6">
+                   <item row="0" column="0">
+                    <widget class="QLabel" name="label_8">
+                     <property name="text">
+                      <string>Nome:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="0" column="1">
+                    <widget class="QLineEdit" name="lineEdit_Nome"/>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item row="1" column="0">
+                 <widget class="QFrame" name="frame_8">
+                  <property name="frameShape">
+                   <enum>QFrame::Shape::Box</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Shadow::Raised</enum>
+                  </property>
+                  <layout class="QGridLayout" name="gridLayout_8">
+                   <item row="0" column="0">
+                    <layout class="QGridLayout" name="gridLayout_7">
+                     <item row="0" column="0">
+                      <layout class="QGridLayout" name="gridLayout_5">
+                       <item row="0" column="0">
+                        <layout class="QGridLayout" name="gridLayout">
+                         <item row="0" column="0">
+                          <widget class="QLabel" name="label_9">
+                           <property name="text">
+                            <string>Ícones :</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="0" column="1">
+                          <widget class="QComboBox" name="comboBoxLinks">
+                           <property name="maximumSize">
+                            <size>
+                             <width>80</width>
+                             <height>20</height>
+                            </size>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </item>
+                       <item row="1" column="0">
+                        <widget class="QPushButton" name="pushButton_Screen">
+                         <property name="styleSheet">
+                          <string notr="true">QPushButton {
+    /* Mantém o estilo original do botão */
+    transition: all 0.2s ease; /* Suaviza todas as transições de estado */
+}
+
+QPushButton:hover {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #00f7ff, stop:1 #00d9ff); /* Gradiente suave em tons de azul neon */
+    border: 1px solid #00b3cc; /* Borda azul neon mais escura */
+    border-radius: 4px; /* Cantos arredondados */
+    box-shadow: 0px 4px 8px rgba(0, 247, 255, 0.8); /* Sombra azul neon brilhante e levemente deslocada para dar profundidade */
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #00d9ff, stop:1 #00b3cc); /* Gradiente mais escuro para efeito pressionado */
+    border: 1px solid #0099b3; /* Borda azul neon ainda mais escura */
+    box-shadow: inset 0px 4px 8px rgba(0, 247, 255, 0.8); /* Sombra interna para dar a impressão de que o botão foi pressionado */
+    transform: scale(0.98); /* Leve redução no tamanho para simular o pressionar */
+}
+</string>
+                         </property>
+                         <property name="text">
+                          <string>ScreenOverlay</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </item>
+                     <item row="0" column="1">
+                      <widget class="QGraphicsView" name="graphicsViewIcones">
+                       <property name="sizePolicy">
+                        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                         <horstretch>0</horstretch>
+                         <verstretch>0</verstretch>
+                        </sizepolicy>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>50</width>
+                         <height>50</height>
+                        </size>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item row="2" column="0">
+                 <widget class="QFrame" name="frame_3">
+                  <property name="frameShape">
+                   <enum>QFrame::Shape::Box</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Shadow::Raised</enum>
+                  </property>
+                  <layout class="QGridLayout" name="gridLayout_4">
+                   <item row="0" column="0" colspan="2">
+                    <widget class="QLabel" name="label_4">
+                     <property name="text">
+                      <string>Coordenadas da Foto:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="0">
+                    <widget class="QLabel" name="label_5">
+                     <property name="text">
+                      <string>Latitude:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="1">
+                    <widget class="QLineEdit" name="lineEditLatitude"/>
+                   </item>
+                   <item row="2" column="0">
+                    <widget class="QLabel" name="label_6">
+                     <property name="text">
+                      <string>Longitude:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="2" column="1">
+                    <widget class="QLineEdit" name="lineEditLongitude"/>
+                   </item>
+                   <item row="3" column="0">
+                    <widget class="QLabel" name="label_10">
+                     <property name="text">
+                      <string>Altitude:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="3" column="1">
+                    <widget class="QLineEdit" name="lineEditAltitude"/>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item row="3" column="0">
+                 <widget class="QFrame" name="frame_4">
+                  <property name="frameShape">
+                   <enum>QFrame::Shape::Box</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Shadow::Raised</enum>
+                  </property>
+                  <layout class="QGridLayout" name="gridLayout_2">
+                   <item row="0" column="0">
+                    <widget class="QLabel" name="label_3">
+                     <property name="text">
+                      <string>Resolução:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="0" column="1">
+                    <widget class="QLineEdit" name="lineEditResolucao"/>
+                   </item>
+                   <item row="1" column="0">
+                    <widget class="QLabel" name="label_13">
+                     <property name="text">
+                      <string>Data:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="1">
+                    <widget class="QLineEdit" name="lineEditData"/>
+                   </item>
+                   <item row="2" column="0">
+                    <widget class="QLabel" name="label_14">
+                     <property name="text">
+                      <string>Horário:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="2" column="1">
+                    <widget class="QLineEdit" name="lineEditHorario"/>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </item>
+            <item row="1" column="0">
+             <widget class="QPushButton" name="pushButtonAbrir">
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+    /* Mantém o estilo original do botão */
+    transition: all 0.2s ease; /* Suaviza todas as transições de estado */
+}
+
+QPushButton:hover {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #80dfff, stop:1 #66c2ff); /* Gradiente suave em tons de azul malibu */
+    border: 1px solid #3399ff; /* Borda azul malibu mais escura */
+    border-radius: 4px; /* Cantos arredondados */
+    box-shadow: 0px 4px 8px rgba(102, 194, 255, 0.8); /* Sombra azul malibu brilhante e levemente deslocada para dar profundidade */
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #66c2ff, stop:1 #3399ff); /* Gradiente mais escuro para efeito pressionado */
+    border: 1px solid #007acc; /* Borda azul malibu ainda mais escura */
+    box-shadow: inset 0px 4px 8px rgba(102, 194, 255, 0.8); /* Sombra interna para dar a impressão de que o botão foi pressionado */
+    transform: scale(0.98); /* Leve redução no tamanho para simular o pressionar */
+}
+</string>
+              </property>
+              <property name="text">
+               <string>ABRIR PASTA</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="1" column="0">
+      <layout class="QGridLayout" name="gridLayout_13">
+       <item row="0" column="0">
+        <widget class="QPushButton" name="pushButtonKMZ">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    /* Mantém o estilo original do botão */
+    transition: all 0.2s ease; /* Suaviza todas as transições de estado */
+}
+
+QPushButton:hover {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #e6ccff, stop:1 #cc99ff); /* Gradiente suave em tons de púrpura claro */
+    border: 1px solid #9933ff; /* Borda púrpura mais escura */
+    border-radius: 4px; /* Cantos arredondados */
+    box-shadow: 0px 4px 8px rgba(128, 0, 128, 0.8); /* Sombra púrpura brilhante e levemente deslocada para dar profundidade */
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #cc99ff, stop:1 #9933ff); /* Gradiente mais escuro para efeito pressionado */
+    border: 1px solid #660099; /* Borda púrpura ainda mais escura */
+    box-shadow: inset 0px 4px 8px rgba(128, 0, 128, 0.8); /* Sombra interna para dar a impressão de que o botão foi pressionado */
+    transform: scale(0.98); /* Leve redução no tamanho para simular o pressionar */
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Exportar KMZ</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QPushButton" name="pushButtonFecha">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    /* Mantém o estilo original do botão */
+    transition: all 0.2s ease; /* Suaviza todas as transições de estado */
+}
+
+QPushButton:hover {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #ffcccc, stop:1 #ff9999); /* Gradiente suave em tons de vermelho claro */
+    border: 1px solid #ff6666; /* Borda vermelha mais escura */
+    border-radius: 4px; /* Cantos arredondados */
+    box-shadow: 0px 4px 8px rgba(255, 0, 0, 0.8); /* Sombra vermelha brilhante e levemente deslocada para dar profundidade */
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #ff9999, stop:1 #ff6666); /* Gradiente mais escuro para efeito pressionado */
+    border: 1px solid #cc0000; /* Borda vermelha ainda mais escura */
+    box-shadow: inset 0px 4px 8px rgba(255, 0, 0, 0.8); /* Sombra interna para dar a impressão de que o botão foi pressionado */
+    transform: scale(0.98); /* Leve redução no tamanho para simular o pressionar */
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Fechar</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

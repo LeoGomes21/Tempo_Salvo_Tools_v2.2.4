@@ -1,0 +1,831 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GraficoEstruturaSolargsDockWidget</class>
+ <widget class="QgsDockWidget" name="GraficoEstruturaSolargsDockWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1298</width>
+    <height>396</height>
+   </rect>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../icones/estruturasolar.png</normaloff>../icones/estruturasolar.png</iconset>
+  </property>
+  <property name="windowTitle">
+   <string>gsDockWidget</string>
+  </property>
+  <widget class="QWidget" name="dockWidgetContents">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="minimumSize">
+       <size>
+        <width>640</width>
+        <height>313</height>
+       </size>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>GRÁFICO</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_9">
+        <item row="0" column="0" colspan="10">
+         <widget class="QScrollArea" name="scrollAreaGrafico">
+          <property name="minimumSize">
+           <size>
+            <width>480</width>
+            <height>240</height>
+           </size>
+          </property>
+          <property name="widgetResizable">
+           <bool>true</bool>
+          </property>
+          <widget class="QWidget" name="scrollAreaWidgetContents">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>988</width>
+             <height>275</height>
+            </rect>
+           </property>
+          </widget>
+         </widget>
+        </item>
+        <item row="0" column="10" rowspan="2">
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="0" column="0" colspan="2">
+           <widget class="QTabWidget" name="tabWidget_2">
+            <property name="autoFillBackground">
+             <bool>false</bool>
+            </property>
+            <property name="currentIndex">
+             <number>1</number>
+            </property>
+            <property name="documentMode">
+             <bool>false</bool>
+            </property>
+            <property name="tabsClosable">
+             <bool>false</bool>
+            </property>
+            <widget class="QWidget" name="tab_1">
+             <attribute name="title">
+              <string>Pontos</string>
+             </attribute>
+             <layout class="QGridLayout" name="gridLayout_4">
+              <item row="0" column="0">
+               <widget class="QTableWidget" name="tableWidget_Dados1">
+                <property name="maximumSize">
+                 <size>
+                  <width>200</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="tab_2">
+             <attribute name="title">
+              <string>Cálculos</string>
+             </attribute>
+             <layout class="QGridLayout" name="gridLayout_10">
+              <item row="0" column="0" rowspan="3">
+               <widget class="QListWidget" name="listWidget_Lista">
+                <property name="maximumSize">
+                 <size>
+                  <width>85</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QLabel" name="label_2">
+                <property name="text">
+                 <string>Altura I:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="2">
+               <widget class="QDoubleSpinBox" name="doubleSpinBox_1">
+                <property name="maximumSize">
+                 <size>
+                  <width>60</width>
+                  <height>20</height>
+                 </size>
+                </property>
+                <property name="suffix">
+                 <string> m</string>
+                </property>
+                <property name="decimals">
+                 <number>3</number>
+                </property>
+                <property name="maximum">
+                 <double>10.000000000000000</double>
+                </property>
+                <property name="singleStep">
+                 <double>0.050000000000000</double>
+                </property>
+                <property name="value">
+                 <double>1.100000000000000</double>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="QLabel" name="label_3">
+                <property name="text">
+                 <string>Altura F:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="2">
+               <widget class="QDoubleSpinBox" name="doubleSpinBox_2">
+                <property name="maximumSize">
+                 <size>
+                  <width>60</width>
+                  <height>20</height>
+                 </size>
+                </property>
+                <property name="suffix">
+                 <string> m</string>
+                </property>
+                <property name="decimals">
+                 <number>3</number>
+                </property>
+                <property name="maximum">
+                 <double>10.000000000000000</double>
+                </property>
+                <property name="singleStep">
+                 <double>0.050000000000000</double>
+                </property>
+                <property name="value">
+                 <double>1.100000000000000</double>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="1" rowspan="2" colspan="2">
+               <widget class="QTableView" name="tableView_2">
+                <property name="maximumSize">
+                 <size>
+                  <width>113</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="0">
+               <layout class="QGridLayout" name="gridLayout_5">
+                <item row="0" column="0">
+                 <widget class="QPushButton" name="pushButtonMat">
+                  <property name="minimumSize">
+                   <size>
+                    <width>45</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>45</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton {
+    /* Mantém o estilo original do botão */
+    transition: all 0.2s ease; /* Suaviza todas as transições de estado */
+}
+
+QPushButton:hover {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #00f7ff, stop:1 #00d9ff); /* Gradiente suave em tons de azul neon */
+    border: 1px solid #00b3cc; /* Borda azul neon mais escura */
+    border-radius: 4px; /* Cantos arredondados */
+    box-shadow: 0px 4px 8px rgba(0, 247, 255, 0.8); /* Sombra azul neon brilhante e levemente deslocada para dar profundidade */
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #00d9ff, stop:1 #00b3cc); /* Gradiente mais escuro para efeito pressionado */
+    border: 1px solid #0099b3; /* Borda azul neon ainda mais escura */
+    box-shadow: inset 0px 4px 8px rgba(0, 247, 255, 0.8); /* Sombra interna para dar a impressão de que o botão foi pressionado */
+    transform: scale(0.98); /* Leve redução no tamanho para simular o pressionar */
+}
+</string>
+                  </property>
+                  <property name="text">
+                   <string>Gráfico</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="1">
+                 <widget class="QPushButton" name="pushButtonLogo">
+                  <property name="maximumSize">
+                   <size>
+                    <width>20</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton {
+    /* Mantém o estilo original do botão */
+    transition: all 0.2s ease; /* Suaviza todas as transições de estado */
+}
+
+QPushButton:hover {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #ccffcc, stop:1 #99ffcc); /* Gradiente suave em tons de aquamarine claro */
+    border: 1px solid #66ffcc; /* Borda aquamarine mais escura */
+    border-radius: 5px; /* Cantos arredondados */
+    box-shadow: 0px 4px 8px rgba(127, 255, 212, 0.8); /* Sombra aquamarine brilhante e levemente deslocada para dar profundidade */
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #99ffcc, stop:1 #66ffcc); /* Gradiente mais escuro para efeito pressionado */
+    border: 1px solid #33cc99; /* Borda aquamarine ainda mais escura */
+    box-shadow: inset 0px 4px 8px rgba(127, 255, 212, 0.8); /* Sombra interna para dar a impressão de que o botão foi pressionado */
+    transform: scale(0.98); /* Leve redução no tamanho para simular o pressionar */
+}
+</string>
+                  </property>
+                  <property name="text">
+                   <string>...</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item row="4" column="0" colspan="3">
+               <widget class="QListWidget" name="listWidget_inc">
+                <property name="maximumSize">
+                 <size>
+                  <width>205</width>
+                  <height>50</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="tab_3">
+             <attribute name="title">
+              <string>Ajustes</string>
+             </attribute>
+             <layout class="QGridLayout" name="gridLayout_8">
+              <item row="0" column="0">
+               <layout class="QGridLayout" name="gridLayout_7">
+                <item row="0" column="0">
+                 <widget class="QLabel" name="label_5">
+                  <property name="text">
+                   <string>Comprimento da Estaca:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="1">
+                 <widget class="QDoubleSpinBox" name="doubleSpinBoxComp">
+                  <property name="suffix">
+                   <string> m</string>
+                  </property>
+                  <property name="minimum">
+                   <double>0.500000000000000</double>
+                  </property>
+                  <property name="maximum">
+                   <double>5.000000000000000</double>
+                  </property>
+                  <property name="singleStep">
+                   <double>0.500000000000000</double>
+                  </property>
+                  <property name="value">
+                   <double>2.200000000000000</double>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="0">
+                 <widget class="QLabel" name="label_7">
+                  <property name="text">
+                   <string>Altura da  Estaca/Solo:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="1">
+                 <widget class="QDoubleSpinBox" name="doubleSpinBoxPadrao">
+                  <property name="suffix">
+                   <string> m</string>
+                  </property>
+                  <property name="decimals">
+                   <number>3</number>
+                  </property>
+                  <property name="minimum">
+                   <double>1.000000000000000</double>
+                  </property>
+                  <property name="maximum">
+                   <double>3.100000000000000</double>
+                  </property>
+                  <property name="singleStep">
+                   <double>0.100000000000000</double>
+                  </property>
+                  <property name="value">
+                   <double>1.100000000000000</double>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="0">
+                 <widget class="QLabel" name="label_6">
+                  <property name="text">
+                   <string>Variação de Ajuste:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="1">
+                 <widget class="QDoubleSpinBox" name="doubleSpinBoxVaria">
+                  <property name="suffix">
+                   <string> m</string>
+                  </property>
+                  <property name="decimals">
+                   <number>3</number>
+                  </property>
+                  <property name="minimum">
+                   <double>0.000000000000000</double>
+                  </property>
+                  <property name="maximum">
+                   <double>0.500000000000000</double>
+                  </property>
+                  <property name="singleStep">
+                   <double>0.050000000000000</double>
+                  </property>
+                  <property name="value">
+                   <double>0.100000000000000</double>
+                  </property>
+                 </widget>
+                </item>
+                <item row="3" column="0">
+                 <widget class="QLabel" name="label_8">
+                  <property name="text">
+                   <string>Quantidade de Placas:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="3" column="1">
+                 <widget class="QSpinBox" name="spinBoxQ">
+                  <property name="minimum">
+                   <number>1</number>
+                  </property>
+                  <property name="value">
+                   <number>10</number>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item row="1" column="0">
+               <spacer name="verticalSpacer">
+                <property name="orientation">
+                 <enum>Qt::Orientation::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>113</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QComboBox" name="comboBoxRaster">
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>0</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QComboBox" name="comboBoxPontos"/>
+          </item>
+         </layout>
+        </item>
+        <item row="1" column="0">
+         <widget class="QPushButton" name="pushButtonAdicionar">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>23</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    /* Mantém o estilo original do botão */
+    transition: all 0.2s ease; /* Suaviza todas as transições de estado */
+}
+
+QPushButton:hover {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #f7ff3c, stop:1 #d9ff00); /* Gradiente suave em tons de amarelo limão */
+    border: 1px solid #b3cc00; /* Borda amarelo limão mais escura */
+    border-radius: 4px; /* Cantos arredondados */
+    box-shadow: 0px 4px 8px rgba(245, 255, 0, 0.8); /* Sombra amarelo limão brilhante e levemente deslocada para dar profundidade */
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #d9ff00, stop:1 #b3cc00); /* Gradiente mais escuro para efeito pressionado */
+    border: 1px solid #99b300; /* Borda amarelo limão ainda mais escura */
+    box-shadow: inset 0px 4px 8px rgba(245, 255, 0, 0.8); /* Sombra interna para dar a impressão de que o botão foi pressionado */
+    transform: scale(0.98); /* Leve redução no tamanho para simular o pressionar */
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Adicionar GeoPackage</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QPushButton" name="pushButtonExportarDXF">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>23</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">/* Estado normal: mantém o estilo original definido pelo Qtdesigner */
+QPushButton {
+    /* Não há alterações aqui, preserva o visual padrão */
+}
+
+/* Ao passar o mouse: aplica o efeito &quot;Windows Vista&quot; com magenta neon,
+   onde a parte inferior fica mais clara e iluminada */
+QPushButton:hover {
+    background: qlineargradient(
+        spread: pad,
+        x1: 0, y1: 0,
+        x2: 0, y2: 1,
+        stop: 0   #ff66ff,  /* Topo levemente mais claro */
+        stop: 0.8 #ff00ff,  /* Cor principal: magenta neon */
+        stop: 1   #ff99ff   /* Fundo mais claro e iluminado */
+    );
+    border: 1px solid #ff00ff; /* Realça a borda em magenta neon */
+    border-radius: 4px;         /* Garante cantos arredondados, se necessário */
+    transition: all 0.2s ease;  /* Suaviza a transição do efeito */
+}
+
+/* Ao clicar: fixa o efeito com cor sólida e aparência &quot;pressionada&quot; */
+QPushButton:pressed {
+    background: qlineargradient(
+        spread: pad,
+        x1: 0, y1: 0,
+        x2: 0, y2: 1,
+        stop: 0   #ff00ff,  /* Gradiente para efeito pressionado */
+        stop: 1   #e600e6
+    );
+    border: 1px solid #b300b3;  /* Borda levemente escurecida */
+    transform: scale(0.98);      /* Sutil redução de escala para simular clique */
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Exportar Camada DXF</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QPushButton" name="pushButtonExportarGPKG">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>23</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    /* Mantém o estilo original do botão */
+    transition: all 0.2s ease; /* Suaviza todas as transições de estado */
+}
+
+QPushButton:hover {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #ffcc99, stop:1 #ff9966); /* Gradiente suave em tons de laranja claro */
+    border: 1px solid #ff6600; /* Borda laranja mais escura */
+    border-radius: 4px; /* Cantos arredondados */
+    box-shadow: 0px 4px 8px rgba(255, 165, 0, 0.8); /* Sombra laranja brilhante e levemente deslocada para dar profundidade */
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #ff9966, stop:1 #ff6600); /* Gradiente mais escuro para efeito pressionado */
+    border: 1px solid #cc5200; /* Borda laranja ainda mais escura */
+    box-shadow: inset 0px 4px 8px rgba(255, 165, 0, 0.8); /* Sombra interna para dar a impressão de que o botão foi pressionado */
+    transform: scale(0.98); /* Leve redução no tamanho para simular o pressionar */
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Salvar GeoPackage </string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="3">
+         <widget class="QPushButton" name="pushButtonPDF">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>23</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    /* Mantém o estilo original do botão */
+    transition: all 0.2s ease; /* Suaviza todas as transições de estado */
+}
+
+QPushButton:hover {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #ffecb3, stop:1 #ffd700); /* Gradiente suave em tons de ouro claro */
+    border: 1px solid #b8860b; /* Borda ouro mais escura */
+    border-radius: 4px; /* Cantos arredondados */
+    box-shadow: 0px 4px 8px rgba(218, 165, 32, 0.8); /* Sombra ouro brilhante e levemente deslocada para dar profundidade */
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #ffd700, stop:1 #b8860b); /* Gradiente mais escuro para efeito pressionado */
+    border: 1px solid #8b6508; /* Borda ouro ainda mais escura */
+    box-shadow: inset 0px 4px 8px rgba(218, 165, 32, 0.8); /* Sombra interna para dar a impressão de que o botão foi pressionado */
+    transform: scale(0.98); /* Leve redução no tamanho para simular o pressionar */
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Salvar PDF's</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="4">
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Orientation::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>587</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="1" column="5">
+         <widget class="QPushButton" name="pushButtonCalculaTudo">
+          <property name="maximumSize">
+           <size>
+            <width>120</width>
+            <height>23</height>
+           </size>
+          </property>
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Calcula Toda Camada&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="statusTip">
+           <string/>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">/* Estado normal: mantém o estilo original definido pelo Qtdesigner */
+QPushButton {
+    /* Não há alterações aqui, preserva o visual padrão */
+}
+
+/* Ao passar o mouse: aplica o efeito &quot;Windows Vista&quot; com azul padrão,
+   onde a parte inferior apresenta um tom mais claro e iluminado */
+QPushButton:hover {
+    background: qlineargradient(
+        spread: pad,
+        x1: 0, y1: 0,
+        x2: 0, y2: 1,
+        stop: 0   #87CEFA,   /* Topo: LightSkyBlue, leve e claro */
+        stop: 0.8 #1E90FF,   /* Meio: DodgerBlue, cor padrão e vibrante */
+        stop: 1   #ADD8E6    /* Fundo: LightBlue, mais claro e iluminado */
+    );
+    border: 1px solid #1E90FF; /* Realça a borda com DodgerBlue */
+    border-radius: 4px;        /* Garante cantos arredondados, se necessário */
+    transition: all 0.2s ease; /* Suaviza a transição do efeito */
+}
+
+/* Ao clicar: fixa o efeito com cor sólida e aparência &quot;pressionada&quot; */
+QPushButton:pressed {
+    background: qlineargradient(
+        spread: pad,
+        x1: 0, y1: 0,
+        x2: 0, y2: 1,
+        stop: 0   #1E90FF,   /* Inicia com DodgerBlue */
+        stop: 1   #1874CD    /* Finaliza com um tom mais escuro */
+    );
+    border: 1px solid #1560BD; /* Borda levemente escurecida */
+    transform: scale(0.98);     /* Sutil redução de escala para simular clique */
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Cálculo Completo</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="6">
+         <widget class="QSpinBox" name="spinBoxSelec"/>
+        </item>
+        <item row="1" column="7">
+         <widget class="QPushButton" name="pushButtonSeq">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>42</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="toolTip">
+           <string>Crava a Sequência de Seleção do ScrollBar</string>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">/* Estado normal: mantém o estilo original definido pelo Qtdesigner */
+QPushButton {
+    /* Estilo original mantido */
+}
+
+/* Ao passar o mouse: aplica o efeito &quot;Windows Vista&quot; com verde, 
+   onde a parte inferior apresenta um tom mais claro e iluminado */
+QPushButton:hover {
+    background: qlineargradient(
+        spread: pad,
+        x1: 0, y1: 0,
+        x2: 0, y2: 1,
+        stop: 0   #32cd32,   /* Parte superior: cor principal */
+        stop: 0.8 #66ff66,   /* Parte intermediária */
+        stop: 1   #99ff99    /* Parte inferior: tom mais claro e iluminado */
+    );
+    border: 1px solid #66ff66; /* Realça a borda em tom de verde intermediário */
+    border-radius: 4px;         /* Garante cantos arredondados, se necessário */
+    transition: all 0.2s ease;  /* Suaviza a transição do efeito */
+}
+
+/* Ao clicar: fixa o efeito com um gradiente que confere aparência &quot;pressionada&quot; */
+QPushButton:pressed {
+    background: qlineargradient(
+        spread: pad,
+        x1: 0, y1: 0,
+        x2: 0, y2: 1,
+        stop: 0   #32cd32,   /* Inicia com o verde principal */
+        stop: 1   #2e8b57    /* Finaliza com um tom um pouco mais escuro */
+    );
+    border: 1px solid #228B22;  /* Borda levemente escurecida */
+    transform: scale(0.98);      /* Sutil redução de escala para simular clique */
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Cravar</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="8">
+         <widget class="QScrollBar" name="horizontalScrollBarSelec">
+          <property name="minimumSize">
+           <size>
+            <width>120</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Orientation::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="9">
+         <widget class="QPushButton" name="pushButtonCalcular">
+          <property name="maximumSize">
+           <size>
+            <width>50</width>
+            <height>23</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">/* Estado normal: mantém o estilo original definido pelo Qtdesigner */
+QPushButton {
+    /* Não há alterações aqui, preserva o visual padrão */
+}
+
+/* Ao passar o mouse: aplica o efeito &quot;Windows Vista&quot; com azul neon */
+QPushButton:hover {
+    background: qlineargradient(
+        spread: pad,
+        x1: 0, y1: 0,
+        x2: 0, y2: 1,
+        stop: 0   #00f7ff,  /* Topo levemente mais claro */
+        stop: 0.8 #80f0ff,
+        stop: 1   #60e0f0   /* Fundo com variação suave */
+    );
+    border: 1px solid #00d9ff; /* Realça a borda em azul neon */
+    border-radius: 4px;         /* Garante cantos arredondados, se necessário */
+    transition: all 0.2s ease;  /* Suaviza a transição do efeito */
+}
+
+/* Ao clicar: fixa o efeito com cor sólida e aparência &quot;pressionada&quot; */
+QPushButton:pressed {
+    background: qlineargradient(
+        spread: pad,
+        x1: 0, y1: 0,
+        x2: 0, y2: 1,
+        stop: 0   #00d9ff,  /* Gradiente para efeito pressionado */
+        stop: 1   #00daf7
+    );
+    border: 1px solid #0099b3;  /* Borda levemente escurecida */
+    transform: scale(0.98);      /* Sutil redução de escala para simular clique */
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Calcular</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>DADOS</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="0" column="0">
+         <widget class="QScrollArea" name="scrollAreaDADOS">
+          <property name="widgetResizable">
+           <bool>true</bool>
+          </property>
+          <widget class="QWidget" name="scrollAreaWidgetContents_2">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>1254</width>
+             <height>275</height>
+            </rect>
+           </property>
+          </widget>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QPushButton" name="pushButtonFecharD">
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    /* Mantém o estilo original do botão */
+    transition: all 0.2s ease; /* Suaviza todas as transições de estado */
+}
+
+QPushButton:hover {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #ffcccc, stop:1 #ff9999); /* Gradiente suave em tons de vermelho claro */
+    border: 1px solid #ff6666; /* Borda vermelha mais escura */
+    border-radius: 4px; /* Cantos arredondados */
+    box-shadow: 0px 4px 8px rgba(255, 0, 0, 0.8); /* Sombra vermelha brilhante e levemente deslocada para dar profundidade */
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #ff9999, stop:1 #ff6666); /* Gradiente mais escuro para efeito pressionado */
+    border: 1px solid #cc0000; /* Borda vermelha ainda mais escura */
+    box-shadow: inset 0px 4px 8px rgba(255, 0, 0, 0.8); /* Sombra interna para dar a impressão de que o botão foi pressionado */
+    transform: scale(0.98); /* Leve redução no tamanho para simular o pressionar */
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Fechar</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QgsDockWidget</class>
+   <extends>QDockWidget</extends>
+   <header>qgsdockwidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

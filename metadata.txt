@@ -1,0 +1,305 @@
+# This file contains metadata for your plugin.
+
+# This file should be included when you package your plugin.# Mandatory items:
+
+[general]
+name=Tempo Salvo Tools
+qgisMinimumVersion=3.44
+qgisMaximumVersion=4.99
+supportsQt6=True
+description=🧰 A productivity-focused QGIS plugin for vector, raster, terrain, and 3D mesh workflows, with tools organized by layer type and engineering tasks. Create, edit, analyze, convert, and export geospatial data to formats such as DXF, KML/KMZ, DAE, STL, OBJ, and XLSX. Includes built-in 3D terrain visualization, raster and vector overlays, and a dedicated 3D mesh viewer and editor. Supports UTM and geographic CRS, with dynamic coordinate handling where applicable.
+	🌐
+	🧰 Plugin para QGIS focado em produtividade com vetores, rasters, terrenos e malhas 3D, reunindo ferramentas organizadas por tipo de camada e rotinas de engenharia. Permite criar, editar, analisar, converter e exportar dados geoespaciais para formatos como DXF, KML/KMZ, DAE, STL, OBJ e XLSX. Inclui visualização 3D de terrenos, sobreposição de rasters e vetores e um visualizador e editor 3D dedicado para malhas. Suporta CRS UTM e geográfico, com tratamento dinâmico de coordenadas quando aplicável.
+version=2.2.4
+author=Leonardo Gomes
+email=leogomes21@gmail.com
+
+about= 	(/◕ヮ◕)/   ♫♫♪ ❤️ QGis ♪♫♫    (＾ｕ＾) 
+	
+	📎 Compatível com QGIS 4 / Qt6 📎
+	🛠 Veja abaixo a lista de funcionalidades do plugin (Português) 🛠
+	🛠 See below the plugin feature list (English) 🛠
+
+	🗂️ Gerenciadores por tipo de camada
+
+	🧵 Linhas / 🟧 Polígonos / 📍 Pontos: criação rápida de camadas, clonagem, alteração de CRS, ajustes de estilo (cor, espessura e tamanho), rótulos simples/HTML, importação e edição de KML/DXF (incluindo textos), exportação para DXF e KML/KMZ e remoção com opções de salvamento.
+	🛰️ Raster: importação e organização de rasters e imagens, salvamento rápido, exportação para DXF e KML/KMZ e visualização 3D própria de terrenos, com suporte a sobreposições de rasters, linhas, polígonos e pontos.
+	🧊 Malhas (Mesh 3D): exportação para DXF/DAE/STL/OBJ e KML/KMZ, visualizador e editor 3D próprio, salvamento rápido, conversões e rasterização de malhas.
+
+	📐 Módulos de análise e geração
+
+	〰️ Curvas de nível 3D: geração em um clique + exportação DXF
+	➜ Setas no MDT: setas e linhas de inclinação sobre o terreno + exportação DXF
+	🧭 Extração de cotas do MDT: geração de pontos cotados e polígonos temáticos a partir dos valores e cores do raster
+	🧱 Grade UTM/GEO: molduras UTM e geográficas com equidistância configurável + exportação DXF
+	🏗️ Platô sobre MDT: criação de platô por polígono, estaqueamento, taludes e gráficos
+	🧮 Volumes entre MDTs: cálculo de corte e aterro + exportação Excel
+	📉 Perfis de MDT: altimetria e inclinação, leitura interativa no mapa, geração de pontos e exportação para PNG/JPG/PDF/TIFF/SVG/DXF
+	📊 Talude 2D: gráficos de corte e aterro + exportação DXF
+	☀️ Estruturas solares: gráficos e dimensionamento de inclinação/estacas + exportação DXF/PDF e GeoPackage
+
+	🗺️ Exportação para KMZ/KML
+
+	📸 Fotos → KMZ: criação de KMZ georreferenciado, escolha de ícones e configuração de ScreenOverlay
+	🖼️ Imagens → KMZ: miniaturas em tabela, ícones personalizados, sincronização com campos e camadas, balões HTML e ScreenOverlay
+
+	🧩 Ferramentas vetoriais avançadas
+
+	🔁 Conversões: linhas ↔ polígonos
+	✂️ Operações sobre linhas: pontos nos vértices, segmentação e geração de polígonos ao longo da linha (quadrado/círculo/hexágono)
+	🧵 Linhas dentro de polígonos: geração de linhas internas com direções configuráveis
+	🧮 Matrizes vetoriais: retangular, polar, setorial e espiral, com edição em tempo real
+	🧷 Geoprocessamento de polígonos: interseção, diferença e união + atualização automática de área e perímetro
+	📏 Dimensionamento: cotas lineares e angulares dinâmicas + exportação DXF
+	🏷️ Notas mecânicas: anotações conectadas ou livres + exportação DXF
+	📋 Gerenciador de Tabelas: facilita a visualização, seleção, edição e organização de campos e atributos das camadas
+
+	🌊 Redes de drenagem
+
+	🧠 Motores: SAGA / TauDEM / WhiteboxTools
+	🧵 Geração e gerenciamento de canais, bacias e sub-bacias, tabelas de controle e simbologia automática
+	🧰 Processamento em segundo plano com QGIS Tasks, mantendo a interface responsiva
+	📈 Gráficos de perfil e organização/exportação de resultados em GeoPackage e DXF
+
+
+	English version
+
+	🗂️ Layer Managers
+
+	🧵 Lines / 🟧 Polygons / 📍 Points: fast layer creation, cloning, CRS switching, styling controls (color, width and size), simple/HTML labeling, KML/DXF import and editing (including DXF text), DXF and KML/KMZ export, and safe layer removal with save options.
+	🛰️ Rasters: raster and image import and organization, quick saving, DXF and KML/KMZ export, plus a built-in 3D terrain viewer with support for raster, line, polygon, and point overlays.
+	🧊 Meshes (3D Mesh): DXF/DAE/STL/OBJ and KML/KMZ export, built-in 3D mesh viewer and editor, quick saving, conversions, and mesh rasterization.
+
+	📐 Analysis & Generation Modules
+
+	〰️ 3D contour lines: one-click generation + DXF export
+	➜ DEM arrows: terrain slope arrows and lines + DXF export
+	🧭 DEM elevation extraction: generation of spot-height points and thematic polygons from raster values and colors
+	🧱 UTM/Geographic grids: configurable UTM and geographic grid frames + DXF export
+	🏗️ DEM platform (plateau): polygon-based platform creation, chainage, slopes and charts
+	🧮 DEM-to-DEM volumes: cut and fill calculations + Excel export
+	📉 Terrain profiles: elevation and slope analysis, interactive map readout, point generation, and export to PNG/JPG/PDF/TIFF/SVG/DXF
+	📊 2D slope/talude charts: cut and fill charts + DXF export
+	☀️ Solar structures: slope/post dimensioning and charts + DXF/PDF export and GeoPackage output
+
+	🗺️ KMZ/KML Export
+
+	📸 Photos → KMZ: georeferenced KMZ creation, icon selection, and ScreenOverlay configuration
+	🖼️ Images → KMZ: thumbnail tables, custom icons, layer/field synchronization, HTML balloons, and ScreenOverlay support
+
+	🧩 Advanced Vector Tools
+
+	🔁 Conversions: lines ↔ polygons
+	✂️ Line operations: vertex points, segmentation, and polygon generation along lines (square/circle/hexagon)
+	🧵 Lines inside polygons: generate internal lines with configurable directions
+	🧮 Vector matrices: rectangular, polar, sector, and spiral layouts with real-time editing
+	🧷 Polygon geoprocessing: intersection, difference, and union with automatic area and perimeter updates
+	📏 Dimensioning: dynamic linear and angular dimensions + DXF export
+	🏷️ Mechanical notes: linked or free annotations + DXF export
+	📋 Table Manager: simplifies layer field and attribute visualization, selection, editing, and organization
+
+	🌊 Drainage Networks
+
+	🧠 Engines: SAGA / TauDEM / WhiteboxTools
+	🧵 Channel, basin and sub-basin generation and management, control tables, and automatic symbology
+	🧰 Background processing with QGIS Tasks to keep the interface responsive
+	📈 Profile charts and result organization/export to GeoPackage and DXF
+	
+	🛠 Verifique se sua máquina possui todos os Módulos Python necessários instalados/ Check that your machine has all the required Python modules installed.
+	
+	⚙️ pip install defusedxml
+	⚙️ pip install xlsxwriter
+	⚙️ pip install matplotlib
+	⚙️ pip install pyqtgraph
+	⚙️ pip install simplekml
+	⚙️ pip install PyOpenGL
+	⚙️ pip install requests
+	⚙️ pip install openpyxl
+	⚙️ pip install Pillow
+	⚙️ pip install pandas
+	⚙️ pip install ezdxf
+	⚙️ pip install numpy
+	⚙️ pip install scipy
+	
+tracker=https://github.com/LeoGomes21/Tempo_Salvo_Tools_v2.2.4/issues
+repository=https://github.com/LeoGomes21/Tempo_Salvo_Tools_v2.2.4
+# End of mandatory metadata
+
+# Recommended items:
+
+hasProcessingProvider=no
+# Uncomment the following line and add your changelog:
+# changelog=
+
+# Tags are comma separated with spaces allowed
+tags=kmz, kml, dxf, dae, stl, obj, raster, export, mash, 3D, graphic, matrix, drainage, convert
+
+homepage=https://www.youtube.com/watch?v=FmtvaKPe7ow&t=1s
+category=Plugins
+icon=icon.png
+# experimental flag
+experimental=False
+
+# deprecated flag (applies to the whole plugin, not just a single version)
+deprecated=False
+
+# Since QGIS 3.44, a comma separated list of plugins to be installed
+# (or upgraded) can be specified.
+# Check the documentation for more information.
+# plugin_dependencies=
+
+#Category of the plugin: Raster, Vector, Database or Web
+# category=
+
+# If the plugin can run on QGIS Server.
+server=False
+
+# Changelog
+changelog=2.2.4
+	⏫ Adicionado a opção de executar o MDT diretamente e a malha integrada ao processo principal em Criar Platô sobre o MDT
+	⏫ Adicionado a opção de inserir Base no MDT em visualizar MDT
+	⏫ Adicionado a opção Ultra de qualidade do MDT em visualizar MDT
+	⏫ Adicionado melhorias de desempenho no diálogo em visualizar MDT
+	⏫ Adicionado controle de Sombreamento (Apenas sobre o MDT) em visualizar MDT e WEB
+	⏫ Adicionado um painel de controle de aparência na WEB
+
+	* 2.2.3
+	⏫ Adicionado diálogo de texto de como usar em Gerar Malhas
+	⏫ Adicionado controle de rebarbas de malhas em Gerar Malhas
+	⏫ Adicionado melhorias da qualidade de Ortofoto no Visualizador Raster
+	⏫ Adicionado perfil topográfico no Visualizador Raster e Web 
+	⏫ Adicionado mais controles nas medições no Visualizador Raster e Web
+	🔃 Ajustes e melhorias no Visualizador/Editor de Malha
+
+	* 2.2.2
+	⏫ Adicionado diálogo de texto de como usar em Gerar Gráficos de Talude 2D 
+	⏫ Adicionado diálogo de texto de como usar em Criar Platô sobre o MDT
+	⏫ Adicinado nova ferramenta de criação de rampas em Criar Platô sobre o MDT
+	🔃 Ajustes e melhorias na lógica de criação da Malha em em Criar Platô sobre o MDT 
+	⏫ Adicionado novas ferramentas de medição de comprimento e área no visualizador Raster e na Exportação WEB
+	🔃 Ajustes e melhorias no visualizador Raster e na Exportação WEB
+	⚠️ Correção de erros no gráfico 2 ao exibir o gráfico de linha fixa em Gerar Gráfico de Perfil
+	⚠️ Correção de erros ao salvar camada temporárias de polígonos em Gerenciar Camadas: Polígonos
+
+	* 2.2.1
+	⏫ Adicionado exportação para Web no visualizador 3D em  Gerenciar Camadas: Raster
+	🔃 Ajustes e melhorias ao exportar para dxf em Gerar Gráfico de Perfil
+	🔃 Ajustes e melhorias ao abrir dxf editável em Gerenciar Camadas: Polígonos
+	🔃 Ajustes e melhorias ao salvar Malhas em Gerenciar Camadas: Malhas
+	🔃 Ajustes e melhorias na Edição 3D no visualizador 3D em Gerenciar Camadas: Malhas
+	🔃 Ajustes e melhorias em Cálculos de Volumes entre MDTs
+	🔃 Ajustes e melhorias ao adicionar camadas em Gerenciar Camadas: Linhas/Polígonos/Pontos
+	🔃 Ajustes e melhorias em Criar Malhas
+	⚠️ Correção de erros no gráfico em Gerar Gráficos de Talude 2D
+	🔃 Ajustes e melhorias em Gerar Gráficos de Talude 2D
+	🔃 Ajustes e melhorias ao exportar para dxf em Gerar Gráficos de Talude 2D
+	
+	* 2.2
+	⚠️ Correção de erros ao modificar a simbologia em Gerenciar Camadas: Linhas
+	🔃 Ajustes e Melhorias ao Adicionar camadas em Gerenciar camadas: Polígonos
+	🔃 Ajustes e melhorias em Gerenciador Tabelas
+	🔃 Ajustes e melhorias em Rasterizar Malhas
+	⚠️ Correção de extração de Pontos em Extrair Cotas de MDT
+	⚠️ Removido Qgis2threejs do Visualizar 3D em  Gerenciar Camadas: Raster
+	⏫ Adicionado novo visualizador 3D em  Gerenciar Camadas: Raster
+
+	* 2.1.13
+	🔃 Ajustes na Tradução para o Inglês
+	🔃 Ajustes e Melhorias em Criar Platô sobre o MDT
+	⚠️ Alteração da lógica do Gráfico 2 em Gerar Gráfico de Perfil
+	🔃 Ajustes e Melhorias ao Exportar Raster para kml em Gerenciar Camadas: Raster
+
+	* 2.1.12
+	⏫ Adicionado Tradução para o Inglês (part 5)
+	🔃 Ajustes e Melhorias em Adicionar Camadas Excel
+	🔃 Ajustes e Melhorias em Grade UTM/GEO
+	🔃 Ajustes e Melhorias ao Salvar Raster em Gerenciar Camadas: Raster
+	🔃 Ajustes e Melhorias ao Adicionar Malhas em Gerenciar Camadas: Malhas
+	⏫ Adicionado novas ferramentas no Visualizador DAE em Gerenciar Camadas: Malhas
+	🔃 Ajustes e melhorias de código
+
+	* 2.1.11
+	⏫ Adicionado Tradução para o Inglês (part 4)
+	⚠️ Correção de compatibilidade QT6
+	⚠️ Correção de erros de segurança
+	🔃 Ajustes e melhorias na exportação de KML em Gerenciar Camadas: Linhas/Polígonos/Pontos
+	⚠️ Correção de execução em Clonar Camadas em Gerenciar Camadas: Linhas/Polígonos/Pontos
+	⏫ Adicionado novas configurações de exportação KML em Gerenciar Camadas: Pontos
+	🔃 Ajustes e melhorias ao adicionar camadas rapidamente em Gerenciar Camadas: Linhas/Polígonos/Pontos
+	🔃 Ajustes e melhorias ao salvar diretamente SHP em Gerenciar Camadas: Polígonos
+
+	* 2.1.10
+	⏫ Adicionado Tradução para o Inglês (part 3)
+	⚠️ Correção de atributos ao Adicionar camadas de pontos em Gerenciar Camadas de Pontos
+	⚠️ Correção de erro ao exportar dxf em Gerar Gráfico de Perfil
+	🔃 Ajustes e melhorias em Gerar Gráfico de Perfil
+	⚠️ Correção de erros oriundos do numpy em Gerar Gráficos de Talude
+
+	* 2.1.9
+	⏫ Adicionado Tradução para o Inglês (part 2)
+	🔃 Ajustes e melhorias ao exportar dxf e kml em Gerenciar Camadas: Polígonos
+	🔃 Ajustes e melhorias ao exportar kml em Gerenciar Camadas: Pontos
+	⚠️ Correção na exibição de ícones em Fotos para KMZ
+	🔃 Ajustes e melhorias em Fotos para KMZ
+	🔃 Ajustes e melhorias em Imagens para KMZ
+
+	* 2.1.8
+	⏫ Adicionada Tradução para Inglês, parcialmente (Part1)
+	⚠️ Correção da funcionalidade em Gerar dimensionamento de Vetores
+	🔃 Ajuste e melhorias ao exportar para shp em Gerenciar Camadas: linhas, ponto e polígonos
+	🔃 Ajuste e melhorias em Adicionar Camada Excel
+	⚠️ Correção ao adicionar feições kml/kmz editáveis em Gerenciar Camadas: Pontos
+
+	* 2.1.7
+	⚠️ Correção da funcionalidade do WhiteboxTools em Gerar Redes de Drenagem
+	🔃 Ajustes e melhorias em Dimensionamento de Vetores
+	⏫ Adicionada a opção de Azimutes e Rumos em Dimensionamento de Vetores
+	🔃 Ajustes e melhorias em Gerar Curvas de Níveis
+	⏫ Adicionado Caixa de mensagem via Google Apps Script
+	
+	* 2.1.6
+	🔃 Ajustes e melhorias em exportar para DXF em Gerenciar Camadas: Linhas
+	🔃 Ajustes e melhorias em exportar para DXF em Gerenciar Camadas: Polígonos
+	🔃 Ajustes e melhorias em Cálculos de Volumes
+
+	* 2.1.5
+	⚠️ Correção em Gerar Camadas Pontos, ao Clonar Camadas
+	🔃 Ajustes e melhorias ao adicionar kml/kmz editáveis em Gerar Camadas Pontos
+	🔃 Ajustes e melhorias ao adicionar kml/kmz editáveis em Gerar Camadas Polígonos
+	🔃 Ajustes e melhorias em Gerar notas Mecânicas
+	🔃 Ajustes e melhorias em Adicionar Camadas Excel
+	⏫ Adicionado um mensagem informativa quando algum módulo Python não existir na máquina.
+
+	* 2.1.4
+	🔃 Ajustes e melhorias em Geoprocessamento de Polígonos
+	🔃 Ajustes e melhorias em Gerar Redes de Drenagem
+	⏫ Adicionado novo gráfico da sequência de Canais em Gerar Redes de Drenagem
+	🔃 Ajustes e melhorias em Dimensionamento de Vetores
+	🔃 Ajustes e melhorias em Converter para Malha
+	⚠️ Correção de erros de segurança XML
+
+	* 2.1.3
+	⏫ Adicionado configuração do botão de Salvar Múltiplas Malhas
+	⏫ Adicionado botão de salvar DAE na visualização DAE
+	🔃 Ajustes e melhorias em Gerar Gráficos de Perfis
+	⚠️ Correção de erros oriundos da versão Qt5
+
+	* 2.1.2
+	⏫ Adicionado compatibilidade com QGIS 4.0
+	🔃 Ajustes e melhorias em Gerar Gráficos de Perfis
+	⚠️ Correção de erros oriundos da versão Qt5
+
+	* 2.1.1
+	⏫ Adicionado no Módulo de Gerenciador da Tabela 
+	⏫ Adicionado Gerenciador de Tabelas no Gerenciar Camadas
+	🔃 Ajustes e melhorias em Gerar Gráficos de Perfis
+	⚠️ Correção de erros oriundos da versão Qt5
+
+	* 2.0.1
+	🔃 Simplificação da descrição do Plugins
+	⚠️ Correção de erros oriundos da versão Qt5
+
+	* 2.0
+	⏫ Adicionado Suporte ao Qt6
+	⏫ Adicionado Opção de drag&drop de camadas editáveis dxf/kml/kmz e outros em Gerenciar Camadas Polígonos/Pontos
+	🔃 Ajustes e otimizações em adicionar camadas editáveis kml/kmz em Gerenciar Camadas Polígonos

@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GerenciadordeTabelasDialog</class>
+ <widget class="QDialog" name="GerenciadordeTabelasDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>448</width>
+    <height>644</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1000</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../icones/tabela.png</normaloff>../icones/tabela.png</iconset>
+  </property>
+  <property name="sizeGripEnabled">
+   <bool>false</bool>
+  </property>
+  <property name="modal">
+   <bool>false</bool>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_8">
+   <item row="0" column="0">
+    <widget class="QFrame" name="frame">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Shape::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Shadow::Sunken</enum>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_11">
+      <item row="8" column="0" colspan="2">
+       <layout class="QGridLayout" name="gridLayout_4">
+        <item row="0" column="1">
+         <widget class="QPushButton" name="pushButtonAbrirCalculadora">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>23</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    /* Mantém o estilo original do botão */
+    transition: all 0.2s ease; /* Suaviza todas as transições de estado */
+}
+
+QPushButton:hover {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #80dfff, stop:1 #66c2ff); /* Gradiente suave em tons de azul malibu */
+    border: 1px solid #3399ff; /* Borda azul malibu mais escura */
+    border-radius: 4px; /* Cantos arredondados */
+    box-shadow: 0px 4px 8px rgba(102, 194, 255, 0.8); /* Sombra azul malibu brilhante e levemente deslocada para dar profundidade */
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #66c2ff, stop:1 #3399ff); /* Gradiente mais escuro para efeito pressionado */
+    border: 1px solid #007acc; /* Borda azul malibu ainda mais escura */
+    box-shadow: inset 0px 4px 8px rgba(102, 194, 255, 0.8); /* Sombra interna para dar a impressão de que o botão foi pressionado */
+    transform: scale(0.98); /* Leve redução no tamanho para simular o pressionar */
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Abrir Calculadora de Campo</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QPushButton" name="pushButtonNovaCamada">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>23</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    /* Mantém o estilo original do botão */
+    transition: all 0.2s ease; /* Suaviza todas as transições de estado */
+}
+
+QPushButton:hover {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #ffecb3, stop:1 #ffd700); /* Gradiente suave em tons de ouro claro */
+    border: 1px solid #b8860b; /* Borda ouro mais escura */
+    border-radius: 4px; /* Cantos arredondados */
+    box-shadow: 0px 4px 8px rgba(218, 165, 32, 0.8); /* Sombra ouro brilhante e levemente deslocada para dar profundidade */
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #ffd700, stop:1 #b8860b); /* Gradiente mais escuro para efeito pressionado */
+    border: 1px solid #8b6508; /* Borda ouro ainda mais escura */
+    box-shadow: inset 0px 4px 8px rgba(218, 165, 32, 0.8); /* Sombra interna para dar a impressão de que o botão foi pressionado */
+    transform: scale(0.98); /* Leve redução no tamanho para simular o pressionar */
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Gerar Nova Camada Simples</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="6" column="0" colspan="2">
+       <layout class="QGridLayout" name="gridLayout_6">
+        <item row="0" column="0">
+         <widget class="QLineEdit" name="lineEditProjecao">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>23</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QPushButton" name="pushButtonReprojetar">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>23</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    /* Mantém o estilo original do botão */
+    transition: all 0.2s ease; /* Suaviza todas as transições de estado */
+}
+
+QPushButton:hover {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #ffecb3, stop:1 #ffd700); /* Gradiente suave em tons de ouro claro */
+    border: 1px solid #b8860b; /* Borda ouro mais escura */
+    border-radius: 4px; /* Cantos arredondados */
+    box-shadow: 0px 4px 8px rgba(218, 165, 32, 0.8); /* Sombra ouro brilhante e levemente deslocada para dar profundidade */
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #ffd700, stop:1 #b8860b); /* Gradiente mais escuro para efeito pressionado */
+    border: 1px solid #8b6508; /* Borda ouro ainda mais escura */
+    box-shadow: inset 0px 4px 8px rgba(218, 165, 32, 0.8); /* Sombra interna para dar a impressão de que o botão foi pressionado */
+    transform: scale(0.98); /* Leve redução no tamanho para simular o pressionar */
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Reprojetar</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="2" column="0" colspan="2">
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="1">
+         <widget class="QComboBox" name="comboBoxCamada">
+          <property name="minimumSize">
+           <size>
+            <width>150</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>500</width>
+            <height>16777215</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label">
+          <property name="maximumSize">
+           <size>
+            <width>80</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Camada:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QLineEdit" name="lineEditPesquisar"/>
+        </item>
+       </layout>
+      </item>
+      <item row="5" column="0" colspan="2">
+       <layout class="QGridLayout" name="gridLayout_5">
+        <item row="0" column="0">
+         <widget class="QCheckBox" name="checkBoxSelecionaAtributos">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>23</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QCheckBox::indicator {
+    width: 11px;  /* Aumentei um pouco o tamanho para melhor visualização */
+    height: 11px;
+    border-radius: 2px; /* Cantos ligeiramente arredondados */
+    background-color: #ffffff; /* Cor de fundo padrão */
+    border: 1px solid #8a8a8a; /* Borda padrão */
+    transition: all 0.2s ease; /* Suaviza as transições */
+}
+
+QCheckBox::indicator:hover {
+    background-color: #ffffd5; /* Amarelo suave ao passar o mouse */
+    border: 1px solid #8a8a8a; /* Borda padrão ao passar o mouse */
+    border-radius: 2px; /* Mantém os cantos arredondados */
+}
+
+QCheckBox::indicator:checked {
+    width: 11px;  /* Aumentei um pouco o tamanho para melhor visualização */
+    height: 11px;
+    background-color: #ffff00; /* Amarelo mais forte ao ser clicado */
+    border: 1px solid #65964b; /* Borda verde escura ao ser clicado */
+    border-radius: 3px; /* Mantém os cantos arredondados */
+    box-shadow: inset 0px 4px 8px rgba(255, 0, 0, 0.5); /* Sombra interna para efeito 3D */
+}</string>
+          </property>
+          <property name="text">
+           <string>Selecionar Todos Atributos Iguais</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QPushButton" name="pushButtonCamadasAtributos">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>23</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">/* Estado normal: mantém o estilo original definido pelo Qtdesigner */
+QPushButton {
+    /* Não há alterações aqui, preserva o visual padrão */
+}
+
+/* Ao passar o mouse: aplica o efeito &quot;Windows Vista&quot; com azul neon */
+QPushButton:hover {
+    background: qlineargradient(
+        spread: pad,
+        x1: 0, y1: 0,
+        x2: 0, y2: 1,
+        stop: 0   #00f7ff,  /* Topo levemente mais claro */
+        stop: 0.8 #80f0ff,
+        stop: 1   #60e0f0   /* Fundo com variação suave */
+    );
+    border: 1px solid #00d9ff; /* Realça a borda em azul neon */
+    border-radius: 4px;         /* Garante cantos arredondados, se necessário */
+    transition: all 0.2s ease;  /* Suaviza a transição do efeito */
+}
+
+/* Ao clicar: fixa o efeito com cor sólida e aparência &quot;pressionada&quot; */
+QPushButton:pressed {
+    background: qlineargradient(
+        spread: pad,
+        x1: 0, y1: 0,
+        x2: 0, y2: 1,
+        stop: 0   #00d9ff,  /* Gradiente para efeito pressionado */
+        stop: 1   #00daf7
+    );
+    border: 1px solid #0099b3;  /* Borda levemente escurecida */
+    transform: scale(0.98);      /* Sutil redução de escala para simular clique */
+}</string>
+          </property>
+          <property name="text">
+           <string>Criar Camada do(s) Atributos(s)</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="1" column="0" colspan="2">
+       <widget class="Line" name="line">
+        <property name="orientation">
+         <enum>Qt::Orientation::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0" colspan="2">
+       <widget class="Line" name="line_2">
+        <property name="orientation">
+         <enum>Qt::Orientation::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="0" colspan="2">
+       <layout class="QGridLayout" name="gridLayout_7">
+        <item row="0" column="0">
+         <widget class="QPushButton" name="pushButtonCampo">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>23</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    /* Mantém o estilo original do botão */
+    transition: all 0.2s ease; /* Suaviza todas as transições de estado */
+}
+
+QPushButton:hover {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #ffcc99, stop:1 #ff9966); /* Gradiente suave em tons de laranja claro */
+    border: 1px solid #ff6600; /* Borda laranja mais escura */
+    border-radius: 4px; /* Cantos arredondados */
+    box-shadow: 0px 4px 8px rgba(255, 165, 0, 0.8); /* Sombra laranja brilhante e levemente deslocada para dar profundidade */
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #ff9966, stop:1 #ff6600); /* Gradiente mais escuro para efeito pressionado */
+    border: 1px solid #cc5200; /* Borda laranja ainda mais escura */
+    box-shadow: inset 0px 4px 8px rgba(255, 165, 0, 0.8); /* Sombra interna para dar a impressão de que o botão foi pressionado */
+    transform: scale(0.98); /* Leve redução no tamanho para simular o pressionar */
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Gerar Nova Camada do Campo</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QPushButton" name="pushButtonSalvarCamadaEditada">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>23</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">/* Estado normal: mantém o estilo original definido pelo Qtdesigner */
+QPushButton {
+    /* Não há alterações aqui, preserva o visual padrão */
+}
+
+/* Ao passar o mouse: aplica o efeito &quot;Windows Vista&quot; com azul padrão,
+   onde a parte inferior apresenta um tom mais claro e iluminado */
+QPushButton:hover {
+    background: qlineargradient(
+        spread: pad,
+        x1: 0, y1: 0,
+        x2: 0, y2: 1,
+        stop: 0   #87CEFA,   /* Topo: LightSkyBlue, leve e claro */
+        stop: 0.8 #1E90FF,   /* Meio: DodgerBlue, cor padrão e vibrante */
+        stop: 1   #ADD8E6    /* Fundo: LightBlue, mais claro e iluminado */
+    );
+    border: 1px solid #1E90FF; /* Realça a borda com DodgerBlue */
+    border-radius: 4px;        /* Garante cantos arredondados, se necessário */
+    transition: all 0.2s ease; /* Suaviza a transição do efeito */
+}
+
+/* Ao clicar: fixa o efeito com cor sólida e aparência &quot;pressionada&quot; */
+QPushButton:pressed {
+    background: qlineargradient(
+        spread: pad,
+        x1: 0, y1: 0,
+        x2: 0, y2: 1,
+        stop: 0   #1E90FF,   /* Inicia com DodgerBlue */
+        stop: 1   #1874CD    /* Finaliza com um tom mais escuro */
+    );
+    border: 1px solid #1560BD; /* Borda levemente escurecida */
+    transform: scale(0.98);     /* Sutil redução de escala para simular clique */
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Salvar Camada Editada</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="0" column="0" colspan="2">
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="0" column="0">
+         <widget class="QRadioButton" name="radioButtonLinha">
+          <property name="styleSheet">
+           <string notr="true">QRadioButton::indicator {
+    width: 11px;
+    height: 11px;
+    border-radius: 5px; /* Aproximação de circular */
+    background-color: #ffffff; /* Cor de fundo padrão */
+    border: 1px solid #8a8a8a;
+    transition: all 0.2s ease;
+}
+
+QRadioButton::indicator:hover {
+    background-color: #cce6ff; /* Azul bem claro ao passar o mouse */
+    border: 1px solid #8a8a8a;
+    border-radius: 5px;
+}
+
+QRadioButton::indicator:checked {
+    width: 11px;
+    height: 11px;
+    background-color: #007BFF; /* Azul vibrante */
+    border: 1px solid #004080; /* Azul escuro para contraste */
+    border-radius: 5px;
+    box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.5); /* Efeito 3D interno */
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Linhas</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QRadioButton" name="radioButtonPoligono">
+          <property name="styleSheet">
+           <string notr="true">QRadioButton::indicator {
+    width: 11px;
+    height: 11px;
+    border-radius: 5px; /* Aproximação de circular */
+    background-color: #ffffff; /* Cor de fundo padrão */
+    border: 1px solid #8a8a8a;
+    transition: all 0.2s ease;
+}
+
+QRadioButton::indicator:hover {
+    background-color: #ffcccc; /* Vermelho bem claro ao passar o mouse */
+    border: 1px solid #8a8a8a;
+    border-radius: 5px;
+}
+
+QRadioButton::indicator:checked {
+    width: 11px;
+    height: 11px;
+    background-color: #FF0000; /* Vermelho vibrante */
+    border: 1px solid #8B0000; /* Vermelho escuro para contraste */
+    border-radius: 5px;
+    box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.5); /* Efeito 3D interno */
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Polígonos</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QRadioButton" name="radioButtonPonto">
+          <property name="styleSheet">
+           <string notr="true">QRadioButton::indicator {
+    width: 11px;  
+    height: 11px;
+    border-radius: 5px; /* Circular, pois metade de 11 é aproximadamente 5 */
+    background-color: #ffffff; /* Cor de fundo padrão */
+    border: 1px solid #8a8a8a;
+    transition: all 0.2s ease;
+}
+
+QRadioButton::indicator:hover {
+    background-color: #aaff7f;
+    border: 1px solid #8a8a8a;
+    border-radius: 5px;
+}
+
+QRadioButton::indicator:checked {
+    width: 11px;  
+    height: 11px;
+    background-color: #00ff00;
+    border: 1px solid #65964b;
+    border-radius: 5px;
+    box-shadow: inset 0px 4px 8px rgba(255, 0, 0, 0.5);
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Pontos</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="3" column="0" colspan="2">
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="0" column="1">
+         <widget class="QTableWidget" name="tableWidgetAtributos">
+          <property name="minimumSize">
+           <size>
+            <width>200</width>
+            <height>0</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QTableWidget" name="tableWidgetCampo">
+          <property name="minimumSize">
+           <size>
+            <width>200</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>300</width>
+            <height>16777215</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QPushButton" name="pushButtonFechar">
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    /* Mantém o estilo original do botão */
+    transition: all 0.2s ease; /* Suaviza todas as transições de estado */
+}
+
+QPushButton:hover {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #ffcccc, stop:1 #ff9999); /* Gradiente suave em tons de vermelho claro */
+    border: 1px solid #ff6666; /* Borda vermelha mais escura */
+    border-radius: 4px; /* Cantos arredondados */
+    box-shadow: 0px 4px 8px rgba(255, 0, 0, 0.8); /* Sombra vermelha brilhante e levemente deslocada para dar profundidade */
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #ff9999, stop:1 #ff6666); /* Gradiente mais escuro para efeito pressionado */
+    border: 1px solid #cc0000; /* Borda vermelha ainda mais escura */
+    box-shadow: inset 0px 4px 8px rgba(255, 0, 0, 0.8); /* Sombra interna para dar a impressão de que o botão foi pressionado */
+    transform: scale(0.98); /* Leve redução no tamanho para simular o pressionar */
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Fechar</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

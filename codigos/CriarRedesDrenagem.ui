@@ -1,0 +1,1779 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CriaRedesDrenagemgsDockWidget</class>
+ <widget class="QgsDockWidget" name="CriaRedesDrenagemgsDockWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1632</width>
+    <height>408</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>658</width>
+    <height>380</height>
+   </size>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../../../../../../../../../../../../.designer/icones/estruturasolar.png</normaloff>../../../../../../../../../../../../.designer/icones/estruturasolar.png</iconset>
+  </property>
+  <property name="windowTitle">
+   <string>gsDockWidget</string>
+  </property>
+  <widget class="QWidget" name="dockWidgetContents">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="1" column="0">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>640</width>
+        <height>313</height>
+       </size>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>REDES</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_9">
+        <item row="3" column="2">
+         <widget class="QFrame" name="frame_2">
+          <property name="minimumSize">
+           <size>
+            <width>270</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>305</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::Shape::Box</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Shadow::Sunken</enum>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_4">
+           <item row="0" column="0" colspan="2">
+            <layout class="QGridLayout" name="gridLayout_5">
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_5">
+               <property name="maximumSize">
+                <size>
+                 <width>110</width>
+                 <height>19</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>Profundidade Mínima:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QDoubleSpinBox" name="doubleSpinBoxMinimo">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>19</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>55</width>
+                 <height>19</height>
+                </size>
+               </property>
+               <property name="suffix">
+                <string> m</string>
+               </property>
+               <property name="minimum">
+                <double>0.000000000000000</double>
+               </property>
+               <property name="singleStep">
+                <double>0.050000000000000</double>
+               </property>
+               <property name="value">
+                <double>0.050000000000000</double>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="2">
+              <widget class="QLabel" name="label_11">
+               <property name="maximumSize">
+                <size>
+                 <width>105</width>
+                 <height>19</height>
+                </size>
+               </property>
+               <property name="text">
+                <string> Máxima:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="3">
+              <widget class="QDoubleSpinBox" name="doubleSpinBoxMaximo">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>19</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>55</width>
+                 <height>19</height>
+                </size>
+               </property>
+               <property name="suffix">
+                <string> m</string>
+               </property>
+               <property name="minimum">
+                <double>0.000000000000000</double>
+               </property>
+               <property name="maximum">
+                <double>99.989999999999995</double>
+               </property>
+               <property name="singleStep">
+                <double>0.050000000000000</double>
+               </property>
+               <property name="value">
+                <double>0.100000000000000</double>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item row="1" column="0" colspan="2">
+            <layout class="QGridLayout" name="gridLayout_7">
+             <item row="0" column="0">
+              <widget class="QPushButton" name="pushButtonPronfundidade">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>20</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>500</width>
+                 <height>20</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton {
+    /* Mantém o estilo original do botão */
+    transition: all 0.2s ease; /* Suaviza todas as transições de estado */
+}
+
+QPushButton:hover {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #80dfff, stop:1 #66c2ff); /* Gradiente suave em tons de azul malibu */
+    border: 1px solid #3399ff; /* Borda azul malibu mais escura */
+    border-radius: 4px; /* Cantos arredondados */
+    box-shadow: 0px 4px 8px rgba(102, 194, 255, 0.8); /* Sombra azul malibu brilhante e levemente deslocada para dar profundidade */
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #66c2ff, stop:1 #3399ff); /* Gradiente mais escuro para efeito pressionado */
+    border: 1px solid #007acc; /* Borda azul malibu ainda mais escura */
+    box-shadow: inset 0px 4px 8px rgba(102, 194, 255, 0.8); /* Sombra interna para dar a impressão de que o botão foi pressionado */
+    transform: scale(0.98); /* Leve redução no tamanho para simular o pressionar */
+}
+</string>
+               </property>
+               <property name="text">
+                <string>Poças</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QPushButton" name="pushButtonInundacao">
+               <property name="maximumSize">
+                <size>
+                 <width>500</width>
+                 <height>20</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">/* Estado normal: mantém o estilo original definido pelo Qtdesigner */
+QPushButton {
+    /* Estilo original mantido */
+}
+
+/* Ao passar o mouse: aplica o efeito &quot;Windows Vista&quot; com verde, 
+   onde a parte inferior apresenta um tom mais claro e iluminado */
+QPushButton:hover {
+    background: qlineargradient(
+        spread: pad,
+        x1: 0, y1: 0,
+        x2: 0, y2: 1,
+        stop: 0   #32cd32,   /* Parte superior: cor principal */
+        stop: 0.8 #66ff66,   /* Parte intermediária */
+        stop: 1   #99ff99    /* Parte inferior: tom mais claro e iluminado */
+    );
+    border: 1px solid #66ff66; /* Realça a borda em tom de verde intermediário */
+    border-radius: 4px;         /* Garante cantos arredondados, se necessário */
+    transition: all 0.2s ease;  /* Suaviza a transição do efeito */
+}
+
+/* Ao clicar: fixa o efeito com um gradiente que confere aparência &quot;pressionada&quot; */
+QPushButton:pressed {
+    background: qlineargradient(
+        spread: pad,
+        x1: 0, y1: 0,
+        x2: 0, y2: 1,
+        stop: 0   #32cd32,   /* Inicia com o verde principal */
+        stop: 1   #2e8b57    /* Finaliza com um tom um pouco mais escuro */
+    );
+    border: 1px solid #228B22;  /* Borda levemente escurecida */
+    transform: scale(0.98);      /* Sutil redução de escala para simular clique */
+}
+</string>
+               </property>
+               <property name="text">
+                <string>Inundação</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item row="2" column="0" colspan="2">
+            <widget class="Line" name="line">
+             <property name="maximumSize">
+              <size>
+               <width>300</width>
+               <height>10</height>
+              </size>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Orientation::Horizontal</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0" colspan="2">
+            <layout class="QGridLayout" name="gridLayout_8">
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_12">
+               <property name="maximumSize">
+                <size>
+                 <width>60</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>Passos:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="3">
+              <widget class="QDoubleSpinBox" name="doubleSpinBoxTempo">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>20</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>55</width>
+                 <height>20</height>
+                </size>
+               </property>
+               <property name="suffix">
+                <string> s</string>
+               </property>
+               <property name="minimum">
+                <double>0.100000000000000</double>
+               </property>
+               <property name="maximum">
+                <double>99.989999999999995</double>
+               </property>
+               <property name="singleStep">
+                <double>0.100000000000000</double>
+               </property>
+               <property name="value">
+                <double>0.500000000000000</double>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="2">
+              <widget class="QLabel" name="label_13">
+               <property name="maximumSize">
+                <size>
+                 <width>60</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>Tempo:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QSpinBox" name="spinBoxPasso">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>20</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>50</width>
+                 <height>20</height>
+                </size>
+               </property>
+               <property name="minimum">
+                <number>1</number>
+               </property>
+               <property name="value">
+                <number>2</number>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="4">
+              <spacer name="horizontalSpacer_5">
+               <property name="orientation">
+                <enum>Qt::Orientation::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </item>
+           <item row="4" column="0">
+            <widget class="QPushButton" name="pushButtonGerar">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">/* Estado normal: mantém o estilo original definido pelo Qtdesigner */
+QPushButton {
+    /* Não há alterações aqui, preserva o visual padrão */
+}
+
+/* Ao passar o mouse: aplica o efeito &quot;Windows Vista&quot; com azul padrão,
+   onde a parte inferior apresenta um tom mais claro e iluminado */
+QPushButton:hover {
+    background: qlineargradient(
+        spread: pad,
+        x1: 0, y1: 0,
+        x2: 0, y2: 1,
+        stop: 0   #87CEFA,   /* Topo: LightSkyBlue, leve e claro */
+        stop: 0.8 #1E90FF,   /* Meio: DodgerBlue, cor padrão e vibrante */
+        stop: 1   #ADD8E6    /* Fundo: LightBlue, mais claro e iluminado */
+    );
+    border: 1px solid #1E90FF; /* Realça a borda com DodgerBlue */
+    border-radius: 4px;        /* Garante cantos arredondados, se necessário */
+    transition: all 0.2s ease; /* Suaviza a transição do efeito */
+}
+
+/* Ao clicar: fixa o efeito com cor sólida e aparência &quot;pressionada&quot; */
+QPushButton:pressed {
+    background: qlineargradient(
+        spread: pad,
+        x1: 0, y1: 0,
+        x2: 0, y2: 1,
+        stop: 0   #1E90FF,   /* Inicia com DodgerBlue */
+        stop: 1   #1874CD    /* Finaliza com um tom mais escuro */
+    );
+    border: 1px solid #1560BD; /* Borda levemente escurecida */
+    transform: scale(0.98);     /* Sutil redução de escala para simular clique */
+}
+</string>
+             </property>
+             <property name="text">
+              <string>Pocas (T. Real)</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="1">
+            <widget class="QPushButton" name="pushButtonInundacaoTreal">
+             <property name="styleSheet">
+              <string notr="true">/* Estado normal: mantém o estilo original definido pelo Qtdesigner */
+QPushButton {
+    /* Não há alterações aqui, preserva o visual padrão */
+}
+
+/* Ao passar o mouse: aplica o efeito &quot;Windows Vista&quot; com azul neon */
+QPushButton:hover {
+    background: qlineargradient(
+        spread: pad,
+        x1: 0, y1: 0,
+        x2: 0, y2: 1,
+        stop: 0   #00f7ff,  /* Topo levemente mais claro */
+        stop: 0.8 #80f0ff,
+        stop: 1   #60e0f0   /* Fundo com variação suave */
+    );
+    border: 1px solid #00d9ff; /* Realça a borda em azul neon */
+    border-radius: 4px;         /* Garante cantos arredondados, se necessário */
+    transition: all 0.2s ease;  /* Suaviza a transição do efeito */
+}
+
+/* Ao clicar: fixa o efeito com cor sólida e aparência &quot;pressionada&quot; */
+QPushButton:pressed {
+    background: qlineargradient(
+        spread: pad,
+        x1: 0, y1: 0,
+        x2: 0, y2: 1,
+        stop: 0   #00d9ff,  /* Gradiente para efeito pressionado */
+        stop: 1   #00daf7
+    );
+    border: 1px solid #0099b3;  /* Borda levemente escurecida */
+    transform: scale(0.98);      /* Sutil redução de escala para simular clique */
+}
+</string>
+             </property>
+             <property name="text">
+              <string>Inundação (T. Real)</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="0" colspan="2">
+            <widget class="QSlider" name="horizontalSlider">
+             <property name="maximumSize">
+              <size>
+               <width>300</width>
+               <height>15</height>
+              </size>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Orientation::Horizontal</enum>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QTextEdit" name="textEditMDT">
+          <property name="maximumSize">
+           <size>
+            <width>400</width>
+            <height>16777215</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="3" rowspan="3">
+         <widget class="QTextBrowser" name="textBrowserInfo"/>
+        </item>
+        <item row="1" column="0" rowspan="3">
+         <widget class="QGraphicsView" name="graphicsViewRaster">
+          <property name="minimumSize">
+           <size>
+            <width>200</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>310</width>
+            <height>1000</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <layout class="QGridLayout" name="gridLayout_6">
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_2">
+            <property name="maximumSize">
+             <size>
+              <width>100</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Selecione o Raster:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QComboBox" name="comboBoxRaster">
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>0</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLabel" name="label_4">
+          <property name="maximumSize">
+           <size>
+            <width>180</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Informações do Raster:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>Cálculos de Áreas de Poças e Inundações:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="3">
+         <widget class="QLabel" name="label_16">
+          <property name="maximumSize">
+           <size>
+            <width>180</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Informações Úteis:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1" colspan="2">
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="0" column="1" rowspan="2">
+           <widget class="QScrollArea" name="scrollAreaAtividades">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>380</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="widgetResizable">
+             <bool>true</bool>
+            </property>
+            <widget class="QWidget" name="scrollAreaWidgetContents">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>378</width>
+               <height>110</height>
+              </rect>
+             </property>
+            </widget>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QPushButton" name="pushButtonExecutar">
+            <property name="maximumSize">
+             <size>
+              <width>340</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">/* Estado normal: mantém o estilo original definido pelo Qtdesigner */
+QPushButton {
+    /* Não há alterações aqui, preserva o visual padrão */
+}
+
+/* Ao passar o mouse: aplica o efeito &quot;Windows Vista&quot; com azul neon */
+QPushButton:hover {
+    background: qlineargradient(
+        spread: pad,
+        x1: 0, y1: 0,
+        x2: 0, y2: 1,
+        stop: 0   #00f7ff,  /* Topo levemente mais claro */
+        stop: 0.8 #80f0ff,
+        stop: 1   #60e0f0   /* Fundo com variação suave */
+    );
+    border: 1px solid #00d9ff; /* Realça a borda em azul neon */
+    border-radius: 4px;         /* Garante cantos arredondados, se necessário */
+    transition: all 0.2s ease;  /* Suaviza a transição do efeito */
+}
+
+/* Ao clicar: fixa o efeito com cor sólida e aparência &quot;pressionada&quot; */
+QPushButton:pressed {
+    background: qlineargradient(
+        spread: pad,
+        x1: 0, y1: 0,
+        x2: 0, y2: 1,
+        stop: 0   #00d9ff,  /* Gradiente para efeito pressionado */
+        stop: 1   #00daf7
+    );
+    border: 1px solid #0099b3;  /* Borda levemente escurecida */
+    transform: scale(0.98);      /* Sutil redução de escala para simular clique */
+}
+</string>
+            </property>
+            <property name="text">
+             <string>Executar</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QFrame" name="frame">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Shape::Box</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Shadow::Raised</enum>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_11">
+             <item row="0" column="0">
+              <widget class="QRadioButton" name="radioButtonSAGA">
+               <property name="styleSheet">
+                <string notr="true">QRadioButton::indicator {
+    width: 11px;
+    height: 11px;
+    border-radius: 5px; /* Aproximação de circular */
+    background-color: transparent;
+    border: 1px solid #8a8a8a;
+    transition: all 0.2s ease;
+}
+
+QRadioButton::indicator:hover {
+    background-color: #cce6ff; /* Azul bem claro ao passar o mouse */
+    border: 1px solid #8a8a8a;
+    border-radius: 5px;
+}
+
+QRadioButton::indicator:checked {
+    width: 11px;
+    height: 11px;
+    background-color: #007BFF; /* Azul vibrante */
+    border: 1px solid #004080; /* Azul escuro para contraste */
+    border-radius: 5px;
+    box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.5); /* Efeito 3D interno */
+}
+</string>
+               </property>
+               <property name="text">
+                <string>SAGAGIS</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="checked">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QRadioButton" name="radioButtonTauDem">
+               <property name="toolTip">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;O tenha apenas instalado&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QRadioButton::indicator {
+    width: 11px;
+    height: 11px;
+    border-radius: 5px; /* Aproximação de circular */
+    background-color: transparent;
+    border: 1px solid #8a8a8a;
+    transition: all 0.2s ease;
+}
+
+QRadioButton::indicator:hover {
+    background-color: #ffcccc; /* Vermelho bem claro ao passar o mouse */
+    border: 1px solid #8a8a8a;
+    border-radius: 5px;
+}
+
+QRadioButton::indicator:checked {
+    width: 11px;
+    height: 11px;
+    background-color: #FF0000; /* Vermelho vibrante */
+    border: 1px solid #8B0000; /* Vermelho escuro para contraste */
+    border-radius: 5px;
+    box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.5); /* Efeito 3D interno */
+}
+</string>
+               </property>
+               <property name="text">
+                <string>TauDEM</string>
+               </property>
+               <property name="checked">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QRadioButton" name="radioButtonTools">
+               <property name="toolTip">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Veja se está instalado na Caixa de Ferramentas&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QRadioButton::indicator {
+    width: 11px;  
+    height: 11px;
+    border-radius: 5px; /* Circular, pois metade de 11 é aproximadamente 5 */
+    background-color: transparent;
+    border: 1px solid #8a8a8a;
+    transition: all 0.2s ease;
+}
+
+QRadioButton::indicator:hover {
+    background-color: #aaff7f;
+    border: 1px solid #8a8a8a;
+    border-radius: 5px;
+}
+
+QRadioButton::indicator:checked {
+    width: 11px;  
+    height: 11px;
+    background-color: #00ff00;
+    border: 1px solid #65964b;
+    border-radius: 5px;
+    box-shadow: inset 0px 4px 8px rgba(255, 0, 0, 0.5);
+}
+</string>
+               </property>
+               <property name="text">
+                <string>WhiteboxTools</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLabel" name="label_3">
+          <property name="maximumSize">
+           <size>
+            <width>180</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Selecione o Motor de Cálculo:</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tabCanais">
+       <attribute name="title">
+        <string>CANAIS</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="1" column="0">
+         <widget class="QFrame" name="frame_3">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::Shape::Box</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Shadow::Raised</enum>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_10">
+           <item row="0" column="0">
+            <widget class="QPushButton" name="pushButtonCamada">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>19</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+    /* Mantém o estilo original do botão */
+    transition: all 0.2s ease; /* Suaviza todas as transições de estado */
+}
+
+QPushButton:hover {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #a0e6e6, stop:1 #66cccc); /* Gradiente suave em tons de azul turquesa claro */
+    border: 1px solid #33cccc; /* Borda azul turquesa mais escura */
+    border-radius: 4px; /* Cantos arredondados */
+    box-shadow: 0px 4px 8px rgba(64, 224, 208, 0.8); /* Sombra azul turquesa brilhante e levemente deslocada para dar profundidade */
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #66cccc, stop:1 #33cccc); /* Gradiente mais escuro para efeito pressionado */
+    border: 1px solid #009999; /* Borda azul turquesa ainda mais escura */
+    box-shadow: inset 0px 4px 8px rgba(64, 224, 208, 0.8); /* Sombra interna para dar a impressão de que o botão foi pressionado */
+    transform: scale(0.98); /* Leve redução no tamanho para simular o pressionar */
+}
+</string>
+             </property>
+             <property name="text">
+              <string>Criar Camada</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QCheckBox" name="checkBoxMapTool">
+             <property name="maximumSize">
+              <size>
+               <width>70</width>
+               <height>19</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QCheckBox::indicator {
+    width: 11px;             /* Tamanho do quadradinho */
+    height: 11px;
+    border-radius: 2px;      /* Cantos arredondados */
+    background-color: transparent;
+    border: 1px solid #8a8a8a; /* Borda cinza padrão */
+    transition: all 0.2s ease; /* Suaviza as transições */
+}
+
+QCheckBox::indicator:hover {
+    background-color: #FFC78E; /* Laranja mais claro ao passar o mouse */
+    border: 1px solid #8a8a8a; 
+    border-radius: 2px;
+}
+
+QCheckBox::indicator:checked {
+    width: 11px;
+    height: 11px;
+    background-color: #FFA500;   /* Laranja vibrante ao marcar */
+    border: 1px solid #CC8400;   /* Borda laranja mais escura */
+    border-radius: 3px;
+    box-shadow: inset 0px 4px 8px rgba(255, 165, 0, 0.5); /* Sombra interna em laranja */
+}
+</string>
+             </property>
+             <property name="text">
+              <string>MapTool</string>
+             </property>
+             <property name="checked">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2" colspan="2">
+            <layout class="QGridLayout" name="gridLayout_12">
+             <item row="0" column="1">
+              <widget class="QComboBox" name="comboBoxCanais">
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>19</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_6">
+               <property name="maximumSize">
+                <size>
+                 <width>132</width>
+                 <height>19</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>Tipos de Canais Regulares:</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item row="0" column="4" rowspan="5" colspan="2">
+            <widget class="QScrollArea" name="scrollAreaResultado">
+             <property name="minimumSize">
+              <size>
+               <width>270</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>270</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="widgetResizable">
+              <bool>true</bool>
+             </property>
+             <widget class="QWidget" name="scrollAreaWidgetContents_3">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>268</width>
+                <height>269</height>
+               </rect>
+              </property>
+             </widget>
+            </widget>
+           </item>
+           <item row="0" column="6" rowspan="5" colspan="9">
+            <widget class="QScrollArea" name="scrollAreaGrafico">
+             <property name="widgetResizable">
+              <bool>true</bool>
+             </property>
+             <widget class="QWidget" name="scrollAreaWidgetContents_4">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>770</width>
+                <height>269</height>
+               </rect>
+              </property>
+             </widget>
+            </widget>
+           </item>
+           <item row="1" column="0" colspan="4">
+            <widget class="Line" name="line_4">
+             <property name="orientation">
+              <enum>Qt::Orientation::Horizontal</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0" rowspan="4" colspan="2">
+            <layout class="QGridLayout" name="gridLayout_13">
+             <item row="0" column="0">
+              <widget class="QTableView" name="tableViewCamada">
+               <property name="minimumSize">
+                <size>
+                 <width>120</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>110</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QTableView" name="tableViewFeicao">
+               <property name="minimumSize">
+                <size>
+                 <width>90</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>110</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0" colspan="2">
+              <widget class="QGraphicsView" name="graphicsViewTipo">
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>120</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item row="2" column="2" colspan="2">
+            <layout class="QGridLayout" name="gridLayout_15">
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_8">
+               <property name="maximumSize">
+                <size>
+                 <width>150</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>Coeficiente de Rugosidade (n):</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLineEdit" name="lineEditRugosidade">
+               <property name="placeholderText">
+                <string>Insira/Lista</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="2">
+              <widget class="QPushButton" name="pushButtonLista">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>40</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton {
+    /* Mantém o estilo original do botão */
+    transition: all 0.2s ease; /* Suaviza todas as transições de estado */
+}
+
+QPushButton:hover {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #ccffcc, stop:1 #99ffcc); /* Gradiente suave em tons de aquamarine claro */
+    border: 1px solid #66ffcc; /* Borda aquamarine mais escura */
+    border-radius: 5px; /* Cantos arredondados */
+    box-shadow: 0px 4px 8px rgba(127, 255, 212, 0.8); /* Sombra aquamarine brilhante e levemente deslocada para dar profundidade */
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #99ffcc, stop:1 #66ffcc); /* Gradiente mais escuro para efeito pressionado */
+    border: 1px solid #33cc99; /* Borda aquamarine ainda mais escura */
+    box-shadow: inset 0px 4px 8px rgba(127, 255, 212, 0.8); /* Sombra interna para dar a impressão de que o botão foi pressionado */
+    transform: scale(0.98); /* Leve redução no tamanho para simular o pressionar */
+}
+</string>
+               </property>
+               <property name="text">
+                <string>Lista</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item row="3" column="2">
+            <widget class="QLabel" name="label_10">
+             <property name="maximumSize">
+              <size>
+               <width>173</width>
+               <height>19</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Inverter Direção do Fluxo:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="3">
+            <widget class="QPushButton" name="pushButtonInverter">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>90</width>
+               <height>19</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+    /* Mantém o estilo original do botão */
+    transition: all 0.2s ease; /* Suaviza todas as transições de estado */
+}
+
+QPushButton:hover {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #ccffcc, stop:1 #99ff99); /* Gradiente suave em tons de verde claro */
+    border: 1px solid #66ff66; /* Borda verde mais escura */
+    border-radius: 4px; /* Cantos arredondados */
+    box-shadow: 0px 4px 8px rgba(0, 255, 0, 0.9); /* Sombra verde brilhante e levemente deslocada para dar profundidade */
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #99ff99, stop:1 #66ff66); /* Gradiente mais escuro para efeito pressionado */
+    border: 1px solid #00cc00; /* Borda verde ainda mais escura */
+    box-shadow: inset 0px 4px 8px rgba(0, 255, 0, 0.8); /* Sombra interna para dar a impressão de que o botão foi pressionado */
+    transform: scale(0.98); /* Leve redução no tamanho para simular o pressionar */
+}
+</string>
+             </property>
+             <property name="text">
+              <string>Inverter Direção</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="2" colspan="2">
+            <widget class="QScrollArea" name="scrollAreaDados">
+             <property name="minimumSize">
+              <size>
+               <width>270</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>290</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="widgetResizable">
+              <bool>true</bool>
+             </property>
+             <widget class="QWidget" name="scrollAreaWidgetContents_2">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>268</width>
+                <height>176</height>
+               </rect>
+              </property>
+             </widget>
+            </widget>
+           </item>
+           <item row="5" column="2" colspan="2">
+            <widget class="QPushButton" name="pushButtonCalcular">
+             <property name="minimumSize">
+              <size>
+               <width>20</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>290</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+    /* Mantém o estilo original do botão */
+    transition: all 0.2s ease; /* Suaviza todas as transições de estado */
+}
+
+QPushButton:hover {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #00f7ff, stop:1 #00d9ff); /* Gradiente suave em tons de azul neon */
+    border: 1px solid #00b3cc; /* Borda azul neon mais escura */
+    border-radius: 4px; /* Cantos arredondados */
+    box-shadow: 0px 4px 8px rgba(0, 247, 255, 0.8); /* Sombra azul neon brilhante e levemente deslocada para dar profundidade */
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #00d9ff, stop:1 #00b3cc); /* Gradiente mais escuro para efeito pressionado */
+    border: 1px solid #0099b3; /* Borda azul neon ainda mais escura */
+    box-shadow: inset 0px 4px 8px rgba(0, 247, 255, 0.8); /* Sombra interna para dar a impressão de que o botão foi pressionado */
+    transform: scale(0.98); /* Leve redução no tamanho para simular o pressionar */
+}
+</string>
+             </property>
+             <property name="text">
+              <string>Calcular</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="4">
+            <widget class="QPushButton" name="pushButtonSalvar">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+    /* Mantém o estilo original do botão */
+    transition: all 0.2s ease; /* Suaviza todas as transições de estado */
+}
+
+QPushButton:hover {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #ffcc99, stop:1 #ff9966); /* Gradiente suave em tons de laranja claro */
+    border: 1px solid #ff6600; /* Borda laranja mais escura */
+    border-radius: 4px; /* Cantos arredondados */
+    box-shadow: 0px 4px 8px rgba(255, 165, 0, 0.8); /* Sombra laranja brilhante e levemente deslocada para dar profundidade */
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #ff9966, stop:1 #ff6600); /* Gradiente mais escuro para efeito pressionado */
+    border: 1px solid #cc5200; /* Borda laranja ainda mais escura */
+    box-shadow: inset 0px 4px 8px rgba(255, 165, 0, 0.8); /* Sombra interna para dar a impressão de que o botão foi pressionado */
+    transform: scale(0.98); /* Leve redução no tamanho para simular o pressionar */
+}
+</string>
+             </property>
+             <property name="text">
+              <string>Salvar Projeto</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="5">
+            <widget class="QPushButton" name="pushButtonAbrir">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+    /* Mantém o estilo original do botão */
+    transition: all 0.2s ease; /* Suaviza todas as transições de estado */
+}
+
+QPushButton:hover {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #ffecb3, stop:1 #ffd700); /* Gradiente suave em tons de ouro claro */
+    border: 1px solid #b8860b; /* Borda ouro mais escura */
+    border-radius: 4px; /* Cantos arredondados */
+    box-shadow: 0px 4px 8px rgba(218, 165, 32, 0.8); /* Sombra ouro brilhante e levemente deslocada para dar profundidade */
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #ffd700, stop:1 #b8860b); /* Gradiente mais escuro para efeito pressionado */
+    border: 1px solid #8b6508; /* Borda ouro ainda mais escura */
+    box-shadow: inset 0px 4px 8px rgba(218, 165, 32, 0.8); /* Sombra interna para dar a impressão de que o botão foi pressionado */
+    transform: scale(0.98); /* Leve redução no tamanho para simular o pressionar */
+}
+</string>
+             </property>
+             <property name="text">
+              <string>Abrir Projeto</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="6">
+            <widget class="QLabel" name="label_14">
+             <property name="text">
+              <string>Exportar DXF:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="7">
+            <widget class="QPushButton" name="pushButtonCamadaDXF">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>20</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+    /* Mantém o estilo original do botão */
+    transition: all 0.2s ease; /* Suaviza todas as transições de estado */
+}
+
+QPushButton:hover {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #ffccff, stop:1 #ff99ff); /* Gradiente suave em tons de magenta claro */
+    border: 1px solid #ff66ff; /* Borda magenta mais escura */
+    border-radius: 4px; /* Cantos arredondados */
+    box-shadow: 0px 4px 8px rgba(255, 0, 255, 0.8); /* Sombra magenta brilhante e levemente deslocada para dar profundidade */
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #ff99ff, stop:1 #ff66ff); /* Gradiente mais escuro para efeito pressionado */
+    border: 1px solid #cc00cc; /* Borda magenta ainda mais escura */
+    box-shadow: inset 0px 4px 8px rgba(255, 0, 255, 0.8); /* Sombra interna para dar a impressão de que o botão foi pressionado */
+    transform: scale(0.98); /* Leve redução no tamanho para simular o pressionar */
+}
+</string>
+             </property>
+             <property name="text">
+              <string>Camadas</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="8">
+            <widget class="Line" name="line_2">
+             <property name="orientation">
+              <enum>Qt::Orientation::Vertical</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="9">
+            <widget class="QPushButton" name="pushButtonGraficoDXF">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+    /* Mantém o estilo original do botão */
+    transition: all 0.2s ease; /* Suaviza todas as transições de estado */
+}
+
+QPushButton:hover {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #e6ccff, stop:1 #cc99ff); /* Gradiente suave em tons de púrpura claro */
+    border: 1px solid #9933ff; /* Borda púrpura mais escura */
+    border-radius: 4px; /* Cantos arredondados */
+    box-shadow: 0px 4px 8px rgba(128, 0, 128, 0.8); /* Sombra púrpura brilhante e levemente deslocada para dar profundidade */
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #cc99ff, stop:1 #9933ff); /* Gradiente mais escuro para efeito pressionado */
+    border: 1px solid #660099; /* Borda púrpura ainda mais escura */
+    box-shadow: inset 0px 4px 8px rgba(128, 0, 128, 0.8); /* Sombra interna para dar a impressão de que o botão foi pressionado */
+    transform: scale(0.98); /* Leve redução no tamanho para simular o pressionar */
+}
+</string>
+             </property>
+             <property name="text">
+              <string>Gráfico</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="10">
+            <widget class="QCheckBox" name="checkBoxTabela">
+             <property name="styleSheet">
+              <string notr="true">QCheckBox::indicator {
+    width: 11px;  /* Aumentei um pouco o tamanho para melhor visualização */
+    height: 11px;
+    border-radius: 2px; /* Cantos ligeiramente arredondados */
+    background-color: transparent; /* Cor de fundo padrão */
+    border: 1px solid #8a8a8a; /* Borda padrão */
+    transition: all 0.2s ease; /* Suaviza as transições */
+}
+
+QCheckBox::indicator:hover {
+    background-color: #aaff7f; /* Verde suave ao passar o mouse */
+    border: 1px solid #8a8a8a; /* Borda padrão ao passar o mouse */
+    border-radius: 2px; /* Mantém os cantos arredondados */
+}
+
+QCheckBox::indicator:checked {
+    width: 11px;  /* Aumentei um pouco o tamanho para melhor visualização */
+    height: 11px;
+    background-color: #00ff00; /* Verde mais forte ao ser clicado */
+    border: 1px solid #65964b; /* Borda verde escura ao ser clicado */
+    border-radius: 3px; /* Mantém os cantos arredondados */
+    box-shadow: inset 0px 4px 8px rgba(255, 0, 0, 0.5); /* Sombra interna para efeito 3D */
+}</string>
+             </property>
+             <property name="text">
+              <string>Tabela</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="11">
+            <widget class="Line" name="line_3">
+             <property name="orientation">
+              <enum>Qt::Orientation::Vertical</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="12">
+            <spacer name="horizontalSpacer_2">
+             <property name="orientation">
+              <enum>Qt::Orientation::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="5" column="13">
+            <widget class="QCheckBox" name="checkBoxAcima_Abaixo">
+             <property name="styleSheet">
+              <string notr="true">QCheckBox::indicator {
+    width: 11px;  /* Aumentei um pouco o tamanho para melhor visualização */
+    height: 11px;
+    border-radius: 2px; /* Cantos ligeiramente arredondados */
+    background-color: transparent; /* Cor de fundo padrão */
+    border: 1px solid #8a8a8a; /* Borda padrão */
+    transition: all 0.2s ease; /* Suaviza as transições */
+}
+
+QCheckBox::indicator:hover {
+    background-color: #ffffd5; /* Amarelo suave ao passar o mouse */
+    border: 1px solid #8a8a8a; /* Borda padrão ao passar o mouse */
+    border-radius: 2px; /* Mantém os cantos arredondados */
+}
+
+QCheckBox::indicator:checked {
+    width: 11px;  /* Aumentei um pouco o tamanho para melhor visualização */
+    height: 11px;
+    background-color: #ffff00; /* Amarelo mais forte ao ser clicado */
+    border: 1px solid #65964b; /* Borda verde escura ao ser clicado */
+    border-radius: 3px; /* Mantém os cantos arredondados */
+    box-shadow: inset 0px 4px 8px rgba(255, 0, 0, 0.5); /* Sombra interna para efeito 3D */
+}</string>
+             </property>
+             <property name="text">
+              <string>Exibir Hachura</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="14">
+            <spacer name="horizontalSpacer_3">
+             <property name="orientation">
+              <enum>Qt::Orientation::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>PROJETO</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_16">
+        <item row="1" column="6">
+         <widget class="QCheckBox" name="checkBoxAltimetria">
+          <property name="styleSheet">
+           <string notr="true">QCheckBox::indicator {
+    width: 11px;  /* Aumentei um pouco o tamanho para melhor visualização */
+    height: 11px;
+    border-radius: 2px; /* Cantos ligeiramente arredondados */
+    background-color: transparent; /* Cor de fundo padrão */
+    border: 1px solid #8a8a8a; /* Borda padrão */
+    transition: all 0.2s ease; /* Suaviza as transições */
+}
+
+QCheckBox::indicator:hover {
+    background-color: #7eafff; /* Azul suave ao passar o mouse */
+    border: 1px solid #8a8a8a; /* Borda padrão ao passar o mouse */
+    border-radius: 2px; /* Mantém os cantos arredondados */
+}
+
+QCheckBox::indicator:checked {
+    width: 11px;  /* Aumenta um pouco o tamanho para melhor visualização */
+    height: 11px;
+    background-color: #0000ff; /* Azul mais forte ao ser clicado */
+    border: 1px solid #00007f; /* Borda Azul escura ao ser clicado */
+    border-radius: 3px; /* Mantém os cantos arredondados */
+    box-shadow: inset 0px 4px 8px rgba(255, 0, 0, 0.5); /* Sombra interna para efeito 3D */
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Altimetria</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QPushButton" name="pushButtonDXF">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Export DXF</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QPushButton" name="pushButtonConexoes">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Em Breve&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="text">
+           <string>Criar Conexões</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QTabWidget" name="tabWidget_2">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <widget class="QWidget" name="tab_3">
+           <attribute name="title">
+            <string>Canais</string>
+           </attribute>
+           <layout class="QGridLayout" name="gridLayout_14">
+            <item row="0" column="0">
+             <widget class="QTableView" name="tableViewListaCanais">
+              <property name="minimumSize">
+               <size>
+                <width>210</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>300</width>
+                <height>16777215</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_4">
+           <attribute name="title">
+            <string>Conexões</string>
+           </attribute>
+           <layout class="QGridLayout" name="gridLayout_17">
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_9">
+              <property name="text">
+               <string>Em breve!</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QTableView" name="tableViewListaConexoes">
+              <property name="minimumSize">
+               <size>
+                <width>210</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>300</width>
+                <height>16777215</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+        <item row="1" column="10">
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Orientation::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>569</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="1" column="5">
+         <widget class="QLabel" name="label_15">
+          <property name="text">
+           <string>Configuração de Exibição:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="7">
+         <widget class="QCheckBox" name="checkBoxTrecho">
+          <property name="styleSheet">
+           <string notr="true">QCheckBox::indicator {
+    width: 11px;  /* Aumentei um pouco o tamanho para melhor visualização */
+    height: 11px;
+    border-radius: 2px; /* Cantos ligeiramente arredondados */
+    background-color: transparent; /* Cor de fundo padrão */
+    border: 1px solid #8a8a8a; /* Borda padrão */
+    transition: all 0.2s ease; /* Suaviza as transições */
+}
+
+QCheckBox::indicator:hover {
+    background-color: #aaff7f; /* Verde suave ao passar o mouse */
+    border: 1px solid #8a8a8a; /* Borda padrão ao passar o mouse */
+    border-radius: 2px; /* Mantém os cantos arredondados */
+}
+
+QCheckBox::indicator:checked {
+    width: 11px;  /* Aumentei um pouco o tamanho para melhor visualização */
+    height: 11px;
+    background-color: #00ff00; /* Verde mais forte ao ser clicado */
+    border: 1px solid #65964b; /* Borda verde escura ao ser clicado */
+    border-radius: 3px; /* Mantém os cantos arredondados */
+    box-shadow: inset 0px 4px 8px rgba(255, 0, 0, 0.5); /* Sombra interna para efeito 3D */
+}</string>
+          </property>
+          <property name="text">
+           <string>Trecho</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QLabel" name="label_7">
+          <property name="text">
+           <string>Mais ações serão adicionadas em Breve</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="8">
+         <widget class="QCheckBox" name="checkBoxHachura">
+          <property name="styleSheet">
+           <string notr="true">QCheckBox::indicator {
+    width: 11px;  /* Aumentei um pouco o tamanho para melhor visualização */
+    height: 11px;
+    border-radius: 2px; /* Cantos ligeiramente arredondados */
+    background-color: transparent; /* Cor de fundo padrão */
+    border: 1px solid #8a8a8a; /* Borda padrão */
+    transition: all 0.2s ease; /* Suaviza as transições */
+}
+
+QCheckBox::indicator:hover {
+    background-color: #ffffd5; /* Amarelo suave ao passar o mouse */
+    border: 1px solid #8a8a8a; /* Borda padrão ao passar o mouse */
+    border-radius: 2px; /* Mantém os cantos arredondados */
+}
+
+QCheckBox::indicator:checked {
+    width: 11px;  /* Aumentei um pouco o tamanho para melhor visualização */
+    height: 11px;
+    background-color: #ffff00; /* Amarelo mais forte ao ser clicado */
+    border: 1px solid #65964b; /* Borda verde escura ao ser clicado */
+    border-radius: 3px; /* Mantém os cantos arredondados */
+    box-shadow: inset 0px 4px 8px rgba(255, 0, 0, 0.5); /* Sombra interna para efeito 3D */
+}</string>
+          </property>
+          <property name="text">
+           <string>Hachura</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1" colspan="10">
+         <widget class="QScrollArea" name="scrollAreaProjeto">
+          <property name="minimumSize">
+           <size>
+            <width>200</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="widgetResizable">
+           <bool>true</bool>
+          </property>
+          <widget class="QWidget" name="scrollAreaWidgetContents_5">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>1348</width>
+             <height>291</height>
+            </rect>
+           </property>
+          </widget>
+         </widget>
+        </item>
+        <item row="1" column="3">
+         <spacer name="horizontalSpacer_4">
+          <property name="orientation">
+           <enum>Qt::Orientation::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>570</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="1" column="4">
+         <widget class="Line" name="line_5">
+          <property name="orientation">
+           <enum>Qt::Orientation::Vertical</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="9">
+         <widget class="Line" name="line_6">
+          <property name="orientation">
+           <enum>Qt::Orientation::Vertical</enum>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QgsDockWidget</class>
+   <extends>QDockWidget</extends>
+   <header>qgsdockwidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
